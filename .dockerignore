@@ -1,0 +1,8 @@
+.git
+.github
+data
+build
+tools
+*.zip
+*.md
+.env

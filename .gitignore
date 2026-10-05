@@ -1,0 +1,5 @@
+# Données du LOD (100 Mo) et fichiers générés
+data/
+build/
+*.zip
+.env

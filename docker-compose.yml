@@ -1,0 +1,10 @@
+services:
+  lb:
+    build: .
+    image: ghcr.io/himmreich/learn-luxembourgish:latest
+    container_name: learn-luxembourgish
+    ports:
+      # 8081 par défaut pour ne pas entrer en conflit avec Tomcat (8080).
+      # Pour changer : créez un fichier .env avec LB_PORT=9000
+      - "${LB_PORT:-8081}:80"
+    restart: unless-stopped
