@@ -1,0 +1,727 @@
+[
+ {
+  "theme": "salut",
+  "fr": "Bonjour",
+  "lb": "Moien"
+ },
+ {
+  "theme": "salut",
+  "fr": "Bonsoir",
+  "lb": "Gudden Owend"
+ },
+ {
+  "theme": "salut",
+  "fr": "Bonne nuit",
+  "lb": "Gutt Nuecht"
+ },
+ {
+  "theme": "salut",
+  "fr": "Au revoir",
+  "lb": "Äddi"
+ },
+ {
+  "theme": "salut",
+  "fr": "Merci",
+  "lb": "Merci"
+ },
+ {
+  "theme": "salut",
+  "fr": "S'il vous plaît",
+  "lb": "Wannechgelift"
+ },
+ {
+  "theme": "salut",
+  "fr": "Oui",
+  "lb": "Jo"
+ },
+ {
+  "theme": "salut",
+  "fr": "Non",
+  "lb": "Neen"
+ },
+ {
+  "theme": "salut",
+  "fr": "Comment ça va ?",
+  "lb": "Wéi geet et?"
+ },
+ {
+  "theme": "salut",
+  "fr": "Ça va bien",
+  "lb": "Et geet gutt"
+ },
+ {
+  "theme": "salut",
+  "fr": "Excusez-moi",
+  "lb": "Entschëllegt"
+ },
+ {
+  "theme": "salut",
+  "fr": "Bonne journée",
+  "lb": "Een schéinen Dag"
+ },
+ {
+  "theme": "manger",
+  "fr": "Le pain",
+  "lb": "D'Brout"
+ },
+ {
+  "theme": "manger",
+  "fr": "L'eau",
+  "lb": "D'Waasser"
+ },
+ {
+  "theme": "manger",
+  "fr": "Le lait",
+  "lb": "D'Mëllech"
+ },
+ {
+  "theme": "manger",
+  "fr": "La pomme",
+  "lb": "D'Apel"
+ },
+ {
+  "theme": "manger",
+  "fr": "Le fromage",
+  "lb": "De Kéis"
+ },
+ {
+  "theme": "manger",
+  "fr": "Le café",
+  "lb": "De Kaffi"
+ },
+ {
+  "theme": "manger",
+  "fr": "La bière",
+  "lb": "D'Béier"
+ },
+ {
+  "theme": "manger",
+  "fr": "Le vin",
+  "lb": "De Wäin"
+ },
+ {
+  "theme": "manger",
+  "fr": "La viande",
+  "lb": "D'Fleesch"
+ },
+ {
+  "theme": "manger",
+  "fr": "Le poisson",
+  "lb": "De Fësch"
+ },
+ {
+  "theme": "manger",
+  "fr": "Je voudrais un café",
+  "lb": "Ech hätt gär e Kaffi"
+ },
+ {
+  "theme": "manger",
+  "fr": "L'addition, s'il vous plaît",
+  "lb": "D'Rechnung, wannechgelift"
+ },
+ {
+  "theme": "transport",
+  "fr": "Le train",
+  "lb": "Den Zuch"
+ },
+ {
+  "theme": "transport",
+  "fr": "Le bus",
+  "lb": "De Bus"
+ },
+ {
+  "theme": "transport",
+  "fr": "La gare",
+  "lb": "D'Gare"
+ },
+ {
+  "theme": "transport",
+  "fr": "La voiture",
+  "lb": "Den Auto"
+ },
+ {
+  "theme": "transport",
+  "fr": "Le vélo",
+  "lb": "De Velo"
+ },
+ {
+  "theme": "transport",
+  "fr": "L'aéroport",
+  "lb": "De Fluchhafen"
+ },
+ {
+  "theme": "transport",
+  "fr": "La rue",
+  "lb": "D'Strooss"
+ },
+ {
+  "theme": "transport",
+  "fr": "Où est la gare ?",
+  "lb": "Wou ass d'Gare?"
+ },
+ {
+  "theme": "transport",
+  "fr": "À gauche",
+  "lb": "Lénks"
+ },
+ {
+  "theme": "transport",
+  "fr": "À droite",
+  "lb": "Riets"
+ },
+ {
+  "theme": "transport",
+  "fr": "Tout droit",
+  "lb": "Riichtaus"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Un (pour compter)",
+  "lb": "Eent"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Deux",
+  "lb": "Zwee"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Trois",
+  "lb": "Dräi"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Quatre",
+  "lb": "Véier"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Cinq",
+  "lb": "Fënnef"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Six",
+  "lb": "Sechs"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Sept",
+  "lb": "Siwen"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Huit",
+  "lb": "Aacht"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Neuf",
+  "lb": "Néng"
+ },
+ {
+  "theme": "nombres",
+  "fr": "Dix",
+  "lb": "Zéng"
+ },
+ {
+  "theme": "famille",
+  "fr": "La mère",
+  "lb": "D'Mamm"
+ },
+ {
+  "theme": "famille",
+  "fr": "Le père",
+  "lb": "De Papp"
+ },
+ {
+  "theme": "famille",
+  "fr": "Le fils",
+  "lb": "De Jong"
+ },
+ {
+  "theme": "famille",
+  "fr": "La fille",
+  "lb": "D'Duechter"
+ },
+ {
+  "theme": "famille",
+  "fr": "Le frère",
+  "lb": "De Brudder"
+ },
+ {
+  "theme": "famille",
+  "fr": "La sœur",
+  "lb": "D'Schwëster"
+ },
+ {
+  "theme": "famille",
+  "fr": "L'ami",
+  "lb": "De Frënd"
+ },
+ {
+  "theme": "famille",
+  "fr": "L'enfant",
+  "lb": "D'Kand"
+ },
+ {
+  "theme": "famille",
+  "fr": "La grand-mère",
+  "lb": "D'Bomi"
+ },
+ {
+  "theme": "famille",
+  "fr": "Le grand-père",
+  "lb": "De Bopa"
+ },
+ {
+  "theme": "phrases",
+  "fr": "Je m'appelle…",
+  "lb": "Ech heeschen…"
+ },
+ {
+  "theme": "phrases",
+  "fr": "Je ne comprends pas",
+  "lb": "Ech verstinn net"
+ },
+ {
+  "theme": "phrases",
+  "fr": "Je ne sais pas",
+  "lb": "Ech weess et net"
+ },
+ {
+  "theme": "phrases",
+  "fr": "Parlez-vous français ?",
+  "lb": "Schwätzt Dir Franséisch?"
+ },
+ {
+  "theme": "phrases",
+  "fr": "Combien ça coûte ?",
+  "lb": "Wat kascht dat?"
+ },
+ {
+  "theme": "phrases",
+  "fr": "Je suis fatigué",
+  "lb": "Ech si midd"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Très bien",
+  "lb": "Ganz gutt"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Bien, merci",
+  "lb": "Gutt, merci"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Comme ci, comme ça",
+  "lb": "Sou lala"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Pas mal",
+  "lb": "Net schlecht"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Pas très bien",
+  "lb": "Net esou gutt"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Ça ne va pas bien",
+  "lb": "Et geet mer net gutt"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Ça va mal",
+  "lb": "Et geet mer schlecht"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Je suis malade",
+  "lb": "Ech si krank"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Et vous ?",
+  "lb": "An Iech?"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Comment allez-vous ?",
+  "lb": "Wéi geet et Iech?"
+ },
+ {
+  "theme": "reponses",
+  "fr": "Tout va bien ?",
+  "lb": "Alles gutt?"
+ },
+ {
+  "theme": "habiter",
+  "fr": "Où habitez-vous ?",
+  "lb": "Wou wunnt Dir?"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite à Luxembourg",
+  "lb": "Ech wunnen zu Lëtzebuerg"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite à Paris",
+  "lb": "Ech wunnen zu Paräis"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite en France",
+  "lb": "Ech wunnen a Frankräich"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite en Allemagne",
+  "lb": "Ech wunnen an Däitschland"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite en Belgique",
+  "lb": "Ech wunnen an der Belsch"
+ },
+ {
+  "theme": "habiter",
+  "fr": "D'où venez-vous ?",
+  "lb": "Vu wou kommt Dir?"
+ },
+ {
+  "theme": "habiter",
+  "fr": "Je viens de France",
+  "lb": "Ech kommen aus Frankräich"
+ },
+ {
+  "theme": "habiter",
+  "fr": "Je viens de Belgique",
+  "lb": "Ech kommen aus der Belsch"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite dans un appartement",
+  "lb": "Ech wunnen an engem Appartement"
+ },
+ {
+  "theme": "habiter",
+  "fr": "J'habite dans une maison",
+  "lb": "Ech wunnen an engem Haus"
+ },
+ {
+  "theme": "habiter",
+  "fr": "Je travaille à Luxembourg",
+  "lb": "Ech schaffen zu Lëtzebuerg"
+ },
+ {
+  "theme": "langues",
+  "fr": "Le luxembourgeois",
+  "lb": "Lëtzebuergesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Le français",
+  "lb": "Franséisch"
+ },
+ {
+  "theme": "langues",
+  "fr": "L'allemand",
+  "lb": "Däitsch"
+ },
+ {
+  "theme": "langues",
+  "fr": "L'anglais",
+  "lb": "Englesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Le portugais",
+  "lb": "Portugisesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Je parle luxembourgeois",
+  "lb": "Ech schwätzen Lëtzebuergesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Je parle français",
+  "lb": "Ech schwätzen Franséisch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Je parle anglais",
+  "lb": "Ech schwätzen Englesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Je parle un peu allemand",
+  "lb": "Ech schwätzen e bëssen Däitsch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Je ne parle pas bien luxembourgeois",
+  "lb": "Ech schwätzen net gutt Lëtzebuergesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Je comprends le luxembourgeois",
+  "lb": "Ech verstinn Lëtzebuergesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "J'apprends le luxembourgeois",
+  "lb": "Ech léieren Lëtzebuergesch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Quelle langue parlez-vous ?",
+  "lb": "Wéi eng Sprooch schwätzt Dir?"
+ },
+ {
+  "theme": "langues",
+  "fr": "Ma langue maternelle est le français",
+  "lb": "Meng Mammesprooch ass Franséisch"
+ },
+ {
+  "theme": "langues",
+  "fr": "Pouvez-vous parler plus lentement ?",
+  "lb": "Kënnt Dir méi lues schwätzen?"
+ },
+ {
+  "theme": "langues",
+  "fr": "Pouvez-vous répéter cela ?",
+  "lb": "Kënnt Dir dat widderhuelen?"
+ },
+ {
+  "theme": "banque",
+  "fr": "La banque",
+  "lb": "D'Bank"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le compte",
+  "lb": "De Kont"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le virement",
+  "lb": "D'Iwwerweisung"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le client",
+  "lb": "De Client"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le solde",
+  "lb": "De Solde"
+ },
+ {
+  "theme": "banque",
+  "fr": "La carte bancaire",
+  "lb": "D'Bankkaart"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le montant",
+  "lb": "De Montant"
+ },
+ {
+  "theme": "banque",
+  "fr": "L'argent",
+  "lb": "D'Geld"
+ },
+ {
+  "theme": "banque",
+  "fr": "Les intérêts",
+  "lb": "D'Zënsen"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le taux d'intérêt",
+  "lb": "Den Zënssaz"
+ },
+ {
+  "theme": "banque",
+  "fr": "Le distributeur de billets",
+  "lb": "De Bancomat"
+ },
+ {
+  "theme": "banque",
+  "fr": "La signature",
+  "lb": "D'Ënnerschrëft"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Comment puis-je vous aider ?",
+  "lb": "Wéi kann ech Iech hëllefen?"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Je voudrais ouvrir un compte",
+  "lb": "Ech wéilt e Kont opmaachen"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Je voudrais faire un virement",
+  "lb": "Ech wéilt eng Iwwerweisung maachen"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Je voudrais retirer de l'argent",
+  "lb": "Ech wéilt Geld ofhiewen"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Votre carte est bloquée",
+  "lb": "Är Kaart ass gespaart"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Le virement a été effectué",
+  "lb": "D'Iwwerweisung ass gemaach ginn"
+ },
+ {
+  "theme": "guichet",
+  "fr": "J'ai oublié mon mot de passe",
+  "lb": "Ech hu mäi Passwuert vergiess"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Pouvez-vous signer ici ?",
+  "lb": "Kënnt Dir hei ënnerschreiwen?"
+ },
+ {
+  "theme": "guichet",
+  "fr": "Quel est le solde ?",
+  "lb": "Wéi héich ass de Solde?"
+ },
+ {
+  "theme": "info",
+  "fr": "L'ordinateur",
+  "lb": "De Computer"
+ },
+ {
+  "theme": "info",
+  "fr": "L'application",
+  "lb": "D'Applikatioun"
+ },
+ {
+  "theme": "info",
+  "fr": "Le mot de passe",
+  "lb": "D'Passwuert"
+ },
+ {
+  "theme": "info",
+  "fr": "Le problème",
+  "lb": "De Problem"
+ },
+ {
+  "theme": "info",
+  "fr": "L'erreur",
+  "lb": "De Feeler"
+ },
+ {
+  "theme": "info",
+  "fr": "Le serveur",
+  "lb": "De Server"
+ },
+ {
+  "theme": "info",
+  "fr": "Le fichier",
+  "lb": "De Fichier"
+ },
+ {
+  "theme": "info",
+  "fr": "Le réseau",
+  "lb": "D'Netzwierk"
+ },
+ {
+  "theme": "info",
+  "fr": "Le courriel",
+  "lb": "D'E-Mail"
+ },
+ {
+  "theme": "info",
+  "fr": "Le site web",
+  "lb": "D'Websäit"
+ },
+ {
+  "theme": "info",
+  "fr": "Cliquer",
+  "lb": "Klicken"
+ },
+ {
+  "theme": "info",
+  "fr": "Télécharger",
+  "lb": "Eroflueden"
+ },
+ {
+  "theme": "info",
+  "fr": "Mettre à jour",
+  "lb": "Aktualiséieren"
+ },
+ {
+  "theme": "info",
+  "fr": "Redémarrer",
+  "lb": "Nei starten"
+ },
+ {
+  "theme": "support",
+  "fr": "Il y a un problème avec l'application",
+  "lb": "Et gëtt e Problem mat der Applikatioun"
+ },
+ {
+  "theme": "support",
+  "fr": "Le client ne peut pas se connecter",
+  "lb": "De Client kann sech net umellen"
+ },
+ {
+  "theme": "support",
+  "fr": "Le mot de passe est faux",
+  "lb": "D'Passwuert ass falsch"
+ },
+ {
+  "theme": "support",
+  "fr": "Ça ne fonctionne pas",
+  "lb": "Et funktionéiert net"
+ },
+ {
+  "theme": "support",
+  "fr": "Quelle erreur voyez-vous ?",
+  "lb": "Wéi eng Feelermeldung gesitt Dir?"
+ },
+ {
+  "theme": "support",
+  "fr": "Pouvez-vous redémarrer l'application ?",
+  "lb": "Kënnt Dir d'Applikatioun nei starten?"
+ },
+ {
+  "theme": "support",
+  "fr": "Réessayez, s'il vous plaît",
+  "lb": "Probéiert et nach eng Kéier, wannechgelift"
+ },
+ {
+  "theme": "support",
+  "fr": "Je regarde ça maintenant",
+  "lb": "Ech kucken dat elo no"
+ },
+ {
+  "theme": "support",
+  "fr": "Je vous envoie un courriel",
+  "lb": "Ech schécken Iech eng E-Mail"
+ },
+ {
+  "theme": "support",
+  "fr": "Le problème est résolu",
+  "lb": "De Problem ass geléist"
+ }
+]

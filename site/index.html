@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lëtzebuergesch</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#F6F8FB;--surface:#FFFFFF;--ink:#12203A;--muted:#5C6B85;--line:#D9E0EC;
+  --blue:#0077B3;--on-blue:#FFFFFF;--blue-soft:#DDF1FA;
+  --red:#C8202F;--red-soft:#FCE4E6;--ok:#1D7F4E;--ok-soft:#DFF3E8;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1626;--surface:#16233A;--ink:#EAF0FA;--muted:#9DB0CF;--line:#263A5C;
+    --blue:#4CC3F1;--on-blue:#0E1626;--blue-soft:#12354B;
+    --red:#FF7A86;--red-soft:#3A1C25;--ok:#5BD08F;--ok-soft:#15352A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1626;--surface:#16233A;--ink:#EAF0FA;--muted:#9DB0CF;--line:#263A5C;
+  --blue:#4CC3F1;--on-blue:#0E1626;--blue-soft:#12354B;
+  --red:#FF7A86;--red-soft:#3A1C25;--ok:#5BD08F;--ok-soft:#15352A;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:480px;margin:0 auto;padding:20px 20px 120px}
+.hidden{display:none!important}
+
+/* Accueil */
+.hero{padding:28px 0 8px}
+.hero .hello{font:800 clamp(56px,19vw,88px)/0.95 var(--display);letter-spacing:-0.03em;margin:0;color:var(--blue)}
+.hero .fr{margin:6px 0 0;color:var(--muted);font-size:18px}
+.stats{display:flex;gap:28px;margin:26px 0 8px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat b{display:block;font:700 28px/1.1 var(--display)}
+.stat span{color:var(--muted);font-size:14px}
+.review{width:100%;margin:18px 0 6px;padding:16px 18px;border-radius:14px;border:0;background:var(--blue);color:var(--on-blue);font:700 18px var(--display);text-align:left;display:flex;justify-content:space-between;align-items:center}
+.review small{font:500 14px var(--body);opacity:.85}
+h2{font:700 20px var(--display);margin:30px 0 10px}
+.themes{display:flex;flex-direction:column;gap:10px}
+.theme{position:relative;overflow:hidden;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.theme .fill{position:absolute;inset:0 auto 0 0;background:var(--blue-soft);z-index:0}
+.theme .row{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.theme .name{font:700 19px var(--display)}
+.theme .meta{color:var(--muted);font-size:14px;white-space:nowrap}
+.diag{padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+.scroll{max-height:34vh;overflow-y:auto;margin:0 0 12px;-webkit-overflow-scrolling:touch}
+.pttl{margin:0 0 4px;font:700 14px var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.pt{display:grid;grid-template-columns:minmax(84px,auto) 1fr;gap:0 14px;padding:3px 0;font-size:16px;line-height:1.35}
+.pt b{font-weight:700}
+.pnote{margin:8px 0 12px;font-size:15px}
+.gram{width:100%;margin:0 0 6px;padding:14px 18px;border-radius:14px;border:1px solid var(--line);background:var(--surface);text-align:left;display:flex;justify-content:space-between;align-items:center;font:700 17px var(--display)}
+.gram small{display:block;font:400 14px var(--body);color:var(--muted)}
+.why{margin:0 0 12px;font-size:15px;color:var(--ink)}
+.art{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:16px}
+.art th,.art td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.art th{font:700 14px var(--body);color:var(--muted)}
+.art td:nth-child(2){font-weight:700;color:var(--blue);white-space:nowrap}
+.gtext h2{margin-top:26px}
+.gtext p{margin:8px 0}
+.ex{display:inline-block;margin:2px 6px 2px 0;padding:2px 10px;border-radius:999px;background:var(--blue-soft);font-weight:500}
+.sub{margin:-4px 0 12px;color:var(--muted);font-size:15px}
+.foot{margin-top:28px;color:var(--muted);font-size:14px}
+.foot button{background:none;border:0;padding:0;text-decoration:underline;color:var(--muted)}
+
+/* Leçon */
+.top{display:flex;align-items:center;gap:14px;padding:6px 0 26px}
+.close{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:22px;line-height:1;flex:none}
+.bar{flex:1;height:12px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--blue);border-radius:6px;transition:width .3s}
+.instr{color:var(--muted);margin:0 0 8px}
+.prompt{font:800 clamp(34px,10vw,46px)/1.1 var(--display);letter-spacing:-0.02em;margin:0 0 28px;overflow-wrap:anywhere}
+.choices{display:flex;flex-direction:column;gap:10px}
+.choice{padding:16px 18px;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:14px;font-size:19px}
+.choice:hover:not(:disabled){border-color:var(--blue)}
+.choice.good{border-color:var(--ok);background:var(--ok-soft)}
+.choice.bad{border-color:var(--red);background:var(--red-soft)}
+.choice:disabled{cursor:default}
+.typed{width:100%;padding:16px 18px;font:500 22px var(--body);color:var(--ink);background:var(--surface);border:2px solid var(--line);border-radius:14px}
+.typed:focus{border-color:var(--blue);outline:none}
+.typed.good{border-color:var(--ok);background:var(--ok-soft)}
+.typed.bad{border-color:var(--red);background:var(--red-soft)}
+.hint{color:var(--muted);font-size:14px;margin:8px 2px 0}
+.sheet{position:fixed;left:0;right:0;bottom:0;padding:18px 20px calc(18px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line)}
+.sheet.good{background:var(--ok-soft);border-color:var(--ok)}
+.sheet.bad{background:var(--red-soft);border-color:var(--red)}
+.sheet .in{max-width:480px;margin:0 auto}
+.sheet .msg{margin:0 0 12px;font:700 19px var(--display)}
+.sheet.good .msg{color:var(--ok)}
+.sheet.bad .msg{color:var(--red)}
+.sheet .msg span{display:block;font:500 17px var(--body);color:var(--ink);margin-top:2px}
+.go{width:100%;padding:15px;border:0;border-radius:14px;background:var(--blue);color:var(--on-blue);font:700 18px var(--display)}
+.go:disabled{opacity:.45;cursor:default}
+.go.alt{background:var(--ok);color:#fff}
+.sheet.bad .go{background:var(--red);color:#fff}
+
+.swap{display:block;margin:14px 0 0;padding:10px 0;background:none;border:0;color:var(--blue);font:500 16px var(--body);text-decoration:underline;text-underline-offset:3px}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:448px;margin:0 auto;padding:12px 16px;border-radius:12px;background:var(--ink);color:var(--bg);font-size:15px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:10}
+#toast.show{opacity:1}
+#toast a{color:inherit}
+/* Audio */
+.promptrow{display:flex;align-items:center;gap:14px;margin:0 0 28px}
+.promptrow .prompt{margin:0}
+.speak{flex:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--blue);background:var(--blue-soft);color:var(--blue);display:grid;place-items:center}
+.speak svg{width:24px;height:24px;fill:currentColor}
+.listen{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;padding:8px 14px 8px 10px;border-radius:999px;border:1px solid currentColor;background:transparent;font:500 16px var(--body);color:var(--ink)}
+.listen svg{width:20px;height:20px;fill:currentColor}
+.approx{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.approx a,.foot a{color:inherit}
+/* Fin */
+.done{text-align:center;padding-top:60px}
+.done .score{font:800 84px/1 var(--display);color:var(--blue);margin:0}
+.done p{color:var(--muted)}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+
+<script>
+/* ---------- Contenu ---------- */
+const THEMES = [
+  {id:"salut", name:"Salutations", words:[
+    ["Bonjour","Moien"],["Bonsoir","Gudden Owend"],["Bonne nuit","Gutt Nuecht"],["Au revoir","Äddi"],
+    ["Merci","Merci"],["S'il vous plaît","Wannechgelift"],["Oui","Jo"],["Non","Neen"],
+    ["Comment ça va ?","Wéi geet et?"],["Ça va bien","Et geet gutt"],["Excusez-moi","Entschëllegt"],["Bonne journée","Een schéinen Dag"]]},
+  {id:"manger", name:"Manger et boire", words:[
+    ["Le pain","D'Brout"],["L'eau","D'Waasser"],["Le lait","D'Mëllech"],["La pomme","D'Apel"],
+    ["Le fromage","De Kéis"],["Le café","De Kaffi"],["La bière","D'Béier"],["Le vin","De Wäin"],
+    ["La viande","D'Fleesch"],["Le poisson","De Fësch"],["Je voudrais un café","Ech hätt gär e Kaffi"],["L'addition, s'il vous plaît","D'Rechnung, wannechgelift"]]},
+  {id:"transport", name:"Se déplacer", words:[
+    ["Le train","Den Zuch"],["Le bus","De Bus"],["La gare","D'Gare"],["La voiture","Den Auto"],
+    ["Le vélo","De Velo"],["L'aéroport","De Fluchhafen"],["La rue","D'Strooss"],["Où est la gare ?","Wou ass d'Gare?"],
+    ["À gauche","Lénks"],["À droite","Riets"],["Tout droit","Riichtaus"]]},
+  {id:"nombres", name:"Les nombres", words:[
+    ["Un (pour compter)","Eent"],["Deux","Zwee"],["Trois","Dräi"],["Quatre","Véier"],["Cinq","Fënnef"],
+    ["Six","Sechs"],["Sept","Siwen"],["Huit","Aacht"],["Neuf","Néng"],["Dix","Zéng"]]},
+  {id:"famille", name:"Famille et amis", words:[
+    ["La mère","D'Mamm"],["Le père","De Papp"],["Le fils","De Jong"],["La fille","D'Duechter"],
+    ["Le frère","De Brudder"],["La sœur","D'Schwëster"],["L'ami","De Frënd"],["L'enfant","D'Kand"],
+    ["La grand-mère","D'Bomi"],["Le grand-père","De Bopa"]]},
+  {id:"phrases", name:"Phrases utiles", words:[
+    ["Je m'appelle…","Ech heeschen…"],["Je ne comprends pas","Ech verstinn net"],["Je ne sais pas","Ech weess et net"],
+    ["Parlez-vous français ?","Schwätzt Dir Franséisch?"],["Combien ça coûte ?","Wat kascht dat?"],["Je suis fatigué","Ech si midd"]]},
+  {id:"reponses", name:"Comment ça va ? Les réponses", words:[
+    ["Très bien","Ganz gutt"],["Bien, merci","Gutt, merci"],["Comme ci, comme ça","Sou lala"],["Pas mal","Net schlecht"],
+    ["Pas très bien","Net esou gutt"],["Ça ne va pas bien","Et geet mer net gutt"],["Ça va mal","Et geet mer schlecht"],
+    ["Je suis malade","Ech si krank"],["Et vous ?","An Iech?"],["Comment allez-vous ?","Wéi geet et Iech?"],["Tout va bien ?","Alles gutt?"]]},
+  {id:"habiter", name:"J'habite à…", words:[
+    ["Où habitez-vous ?","Wou wunnt Dir?"],["J'habite à Luxembourg","Ech wunnen zu Lëtzebuerg"],["J'habite à Paris","Ech wunnen zu Paräis"],
+    ["J'habite en France","Ech wunnen a Frankräich"],["J'habite en Allemagne","Ech wunnen an Däitschland"],["J'habite en Belgique","Ech wunnen an der Belsch"],
+    ["D'où venez-vous ?","Vu wou kommt Dir?"],["Je viens de France","Ech kommen aus Frankräich"],["Je viens de Belgique","Ech kommen aus der Belsch"],
+    ["J'habite dans un appartement","Ech wunnen an engem Appartement"],["J'habite dans une maison","Ech wunnen an engem Haus"],["Je travaille à Luxembourg","Ech schaffen zu Lëtzebuerg"]]},
+  {id:"langues", name:"Les langues que je parle", words:[
+    ["Le luxembourgeois","Lëtzebuergesch"],["Le français","Franséisch"],["L'allemand","Däitsch"],["L'anglais","Englesch"],["Le portugais","Portugisesch"],
+    ["Je parle luxembourgeois","Ech schwätzen Lëtzebuergesch"],["Je parle français","Ech schwätzen Franséisch"],["Je parle anglais","Ech schwätzen Englesch"],
+    ["Je parle un peu allemand","Ech schwätzen e bëssen Däitsch"],["Je ne parle pas bien luxembourgeois","Ech schwätzen net gutt Lëtzebuergesch"],
+    ["Je comprends le luxembourgeois","Ech verstinn Lëtzebuergesch"],["J'apprends le luxembourgeois","Ech léieren Lëtzebuergesch"],
+    ["Quelle langue parlez-vous ?","Wéi eng Sprooch schwätzt Dir?"],["Ma langue maternelle est le français","Meng Mammesprooch ass Franséisch"],
+    ["Pouvez-vous parler plus lentement ?","Kënnt Dir méi lues schwätzen?"],["Pouvez-vous répéter cela ?","Kënnt Dir dat widderhuelen?"]]},
+  {id:"banque", g:"pro", name:"Banque : vocabulaire", words:[
+    ["La banque","D'Bank"],["Le compte","De Kont"],["Le virement","D'Iwwerweisung"],["Le client","De Client"],
+    ["Le solde","De Solde"],["La carte bancaire","D'Bankkaart"],["Le montant","De Montant"],["L'argent","D'Geld"],
+    ["Les intérêts","D'Zënsen"],["Le taux d'intérêt","Den Zënssaz"],["Le distributeur de billets","De Bancomat"],["La signature","D'Ënnerschrëft"]]},
+  {id:"guichet", g:"pro", name:"Banque : au guichet", words:[
+    ["Comment puis-je vous aider ?","Wéi kann ech Iech hëllefen?"],["Je voudrais ouvrir un compte","Ech wéilt e Kont opmaachen"],
+    ["Je voudrais faire un virement","Ech wéilt eng Iwwerweisung maachen"],["Je voudrais retirer de l'argent","Ech wéilt Geld ofhiewen"],
+    ["Votre carte est bloquée","Är Kaart ass gespaart"],["Le virement a été effectué","D'Iwwerweisung ass gemaach ginn"],
+    ["J'ai oublié mon mot de passe","Ech hu mäi Passwuert vergiess"],["Pouvez-vous signer ici ?","Kënnt Dir hei ënnerschreiwen?"],
+    ["Quel est le solde ?","Wéi héich ass de Solde?"]]},
+  {id:"info", g:"pro", name:"Informatique : vocabulaire", words:[
+    ["L'ordinateur","De Computer"],["L'application","D'Applikatioun"],["Le mot de passe","D'Passwuert"],["Le problème","De Problem"],
+    ["L'erreur","De Feeler"],["Le serveur","De Server"],["Le fichier","De Fichier"],["Le réseau","D'Netzwierk"],
+    ["Le courriel","D'E-Mail"],["Le site web","D'Websäit"],["Cliquer","Klicken"],["Télécharger","Eroflueden"],
+    ["Mettre à jour","Aktualiséieren"],["Redémarrer","Nei starten"]]},
+  {id:"support", g:"pro", name:"Support : un problème", words:[
+    ["Il y a un problème avec l'application","Et gëtt e Problem mat der Applikatioun"],
+    ["Le client ne peut pas se connecter","De Client kann sech net umellen"],
+    ["Le mot de passe est faux","D'Passwuert ass falsch"],
+    ["Ça ne fonctionne pas","Et funktionéiert net"],
+    ["Quelle erreur voyez-vous ?","Wéi eng Feelermeldung gesitt Dir?"],
+    ["Pouvez-vous redémarrer l'application ?","Kënnt Dir d'Applikatioun nei starten?"],
+    ["Réessayez, s'il vous plaît","Probéiert et nach eng Kéier, wannechgelift"],
+    ["Je regarde ça maintenant","Ech kucken dat elo no"],
+    ["Je vous envoie un courriel","Ech schécken Iech eng E-Mail"],
+    ["Le problème est résolu","De Problem ass geléist"]]}
+];
+// Clé unique par mot
+THEMES.forEach(t => t.words = t.words.map((w,i)=>({fr:w[0],lb:w[1],key:t.id+":"+i,theme:t.id})));
+const ALL = THEMES.flatMap(t=>t.words);
+
+/* Décomposition mot à mot des phrases : [luxembourgeois, français], et une note facultative */
+const PARTS = {
+"Ech hätt gär e Kaffi":{p:[["Ech","je"],["hätt","aurais (conditionnel de hunn, avoir)"],["gär","volontiers"],["e","un"],["Kaffi","café"]],
+  n:"« hunn gär » (avoir volontiers) veut dire aimer. Au conditionnel, « Ech hätt gär… » donne « j'aimerais… », donc « je voudrais… ». Le petit mot « e » est « un » au masculin (« en » devant une voyelle ou n, d, t, z, h ; « eng » au féminin)."},
+"Wéi geet et?":{p:[["Wéi","comment"],["geet","va (de goen, aller)"],["et","ça"]]},
+"Et geet gutt":{p:[["Et","ça"],["geet","va"],["gutt","bien"]]},
+"Een schéinen Dag":{p:[["Een","un"],["schéinen","beau"],["Dag","jour"]],n:"L'adjectif prend ici la terminaison « -en » parce que « Dag » est masculin."},
+"Gudden Owend":{p:[["Gudden","bon"],["Owend","soir"]],n:"« Owend » est masculin, d'où « Gudden ». Pour « nuit » (féminin), on dit « Gutt Nuecht »."},
+"Gutt Nuecht":{p:[["Gutt","bonne"],["Nuecht","nuit"]],n:"« Nuecht » est féminin : l'adjectif reste « Gutt », sans terminaison."},
+"D'Rechnung, wannechgelift":{p:[["D'Rechnung","l'addition"],["wannechgelift","s'il vous plaît"]]},
+"Wou ass d'Gare?":{p:[["Wou","où"],["ass","est"],["d'Gare","la gare"]]},
+"Ech heeschen…":{p:[["Ech","je"],["heeschen","m'appelle"]]},
+"Ech verstinn net":{p:[["Ech","je"],["verstinn","comprends"],["net","pas"]]},
+"Ech weess et net":{p:[["Ech","je"],["weess","sais"],["et","cela"],["net","pas"]]},
+"Schwätzt Dir Franséisch?":{p:[["Schwätzt","parlez"],["Dir","vous"],["Franséisch","français"]],n:"Pour poser une question, on inverse le verbe et le sujet : « Schwätzt Dir… ? » (parlez-vous… ?)."},
+"Wat kascht dat?":{p:[["Wat","quoi"],["kascht","coûte"],["dat","cela"]]},
+"Ech si midd":{p:[["Ech","je"],["si","suis"],["midd","fatigué"]]},
+"Wéi kann ech Iech hëllefen?":{p:[["Wéi","comment"],["kann","peux"],["ech","je"],["Iech","vous"],["hëllefen","aider"]],n:"L'infinitif (« hëllefen ») se place à la fin de la phrase."},
+"Ech wéilt e Kont opmaachen":{p:[["Ech","je"],["wéilt","voudrais"],["e","un"],["Kont","compte"],["opmaachen","ouvrir"]],n:"« wéilt » est le conditionnel de wëllen (vouloir). L'infinitif « opmaachen » va à la fin."},
+"Ech wéilt eng Iwwerweisung maachen":{p:[["Ech","je"],["wéilt","voudrais"],["eng","une"],["Iwwerweisung","virement"],["maachen","faire"]],n:"« Iwwerweisung » est féminin, donc « eng » (et non « e »)."},
+"Ech wéilt Geld ofhiewen":{p:[["Ech","je"],["wéilt","voudrais"],["Geld","argent"],["ofhiewen","retirer"]]},
+"Är Kaart ass gespaart":{p:[["Är","votre"],["Kaart","carte"],["ass","est"],["gespaart","bloquée"]]},
+"D'Iwwerweisung ass gemaach ginn":{p:[["D'Iwwerweisung","le virement"],["ass … ginn","a été (passif)"],["gemaach","fait"]],n:"Le passif se forme avec « ass » + participe + « ginn » : « ass gemaach ginn » (a été fait)."},
+"Ech hu mäi Passwuert vergiess":{p:[["Ech","je"],["hu","ai"],["mäi","mon"],["Passwuert","mot de passe"],["vergiess","oublié"]]},
+"Kënnt Dir hei ënnerschreiwen?":{p:[["Kënnt","pouvez"],["Dir","vous"],["hei","ici"],["ënnerschreiwen","signer"]]},
+"Wéi héich ass de Solde?":{p:[["Wéi héich","à quelle hauteur"],["ass","est"],["de Solde","le solde"]],n:"Littéralement « à quelle hauteur est le solde ? », c'est-à-dire « quel est le solde ? »."},
+"Et gëtt e Problem mat der Applikatioun":{p:[["Et gëtt","il y a"],["e","un"],["Problem","problème"],["mat","avec"],["der Applikatioun","l'application"]],n:"Après « mat », « d'Applikatioun » devient « der Applikatioun » (datif féminin)."},
+"De Client kann sech net umellen":{p:[["De Client","le client"],["kann","peut"],["sech","se"],["net","ne … pas"],["umellen","connecter"]],n:"« sech umellen » = se connecter. L'infinitif est à la fin."},
+"D'Passwuert ass falsch":{p:[["D'Passwuert","le mot de passe"],["ass","est"],["falsch","faux"]]},
+"Et funktionéiert net":{p:[["Et","ça"],["funktionéiert","fonctionne"],["net","pas"]]},
+"Wéi eng Feelermeldung gesitt Dir?":{p:[["Wéi eng","quelle"],["Feelermeldung","message d'erreur"],["gesitt","voyez"],["Dir","vous"]],n:"« Feelermeldung » est féminin, donc « wéi eng »."},
+"Kënnt Dir d'Applikatioun nei starten?":{p:[["Kënnt","pouvez"],["Dir","vous"],["d'Applikatioun","l'application"],["nei starten","redémarrer"]]},
+"Probéiert et nach eng Kéier, wannechgelift":{p:[["Probéiert","essayez"],["et","cela"],["nach eng Kéier","encore une fois"],["wannechgelift","s'il vous plaît"]]},
+"Ech kucken dat elo no":{p:[["Ech","je"],["kucken … no","regarde (nokucken)"],["dat","cela"],["elo","maintenant"]],n:"« nokucken » est un verbe à particule séparable : « no » passe à la fin de la phrase."},
+"Ech schécken Iech eng E-Mail":{p:[["Ech","je"],["schécken","envoie"],["Iech","à vous"],["eng E-Mail","un courriel"]]},
+"De Problem ass geléist":{p:[["De Problem","le problème"],["ass","est"],["geléist","résolu"]]},
+"Ganz gutt":{p:[["Ganz","très"],["gutt","bien"]]},
+"Net schlecht":{p:[["Net","pas"],["schlecht","mal"]]},
+"Net esou gutt":{p:[["Net","pas"],["esou","si"],["gutt","bien"]]},
+"Et geet mer net gutt":{p:[["Et","ça"],["geet","va"],["mer","à moi"],["net","pas"],["gutt","bien"]],n:"« mer » est la forme courte de « mir » (à moi). « Et geet mer gutt » = « ça va bien pour moi »."},
+"Et geet mer schlecht":{p:[["Et","ça"],["geet","va"],["mer","à moi"],["schlecht","mal"]]},
+"Ech si krank":{p:[["Ech","je"],["si","suis"],["krank","malade"]]},
+"An Iech?":{p:[["An","et"],["Iech","vous"]],n:"Pour renvoyer la question : « Gutt, an Iech ? » (bien, et vous ?). « Iech » est la forme de politesse."},
+"Wéi geet et Iech?":{p:[["Wéi","comment"],["geet","va"],["et","ça"],["Iech","(à) vous"]],n:"C'est la forme de politesse. Avec un ami, on dit simplement « Wéi geet et ? »."},
+"Alles gutt?":{p:[["Alles","tout"],["gutt","bien"]]},
+"Wou wunnt Dir?":{p:[["Wou","où"],["wunnt","habitez"],["Dir","vous"]]},
+"Ech wunnen zu Lëtzebuerg":{p:[["Ech","je"],["wunnen","habite"],["zu","à"],["Lëtzebuerg","Luxembourg"]],n:"On utilise « zu » pour une ville ou un village, et « an » pour un pays."},
+"Ech wunnen zu Paräis":{p:[["Ech","je"],["wunnen","habite"],["zu","à"],["Paräis","Paris"]]},
+"Ech wunnen a Frankräich":{p:[["Ech","je"],["wunnen","habite"],["a","en"],["Frankräich","France"]],n:"« an » (en) perd son n devant la plupart des consonnes : « a Frankräich ». Il le garde devant une voyelle ou n, d, t, z, h : « an Däitschland »."},
+"Ech wunnen an Däitschland":{p:[["Ech","je"],["wunnen","habite"],["an","en"],["Däitschland","Allemagne"]],n:"« an » garde son n car « Däitschland » commence par d."},
+"Ech wunnen an der Belsch":{p:[["Ech","je"],["wunnen","habite"],["an der","en (dans la)"],["Belsch","Belgique"]],n:"« d'Belsch » est féminin : on dit « an der Belsch »."},
+"Vu wou kommt Dir?":{p:[["Vu wou","d'où"],["kommt","venez"],["Dir","vous"]]},
+"Ech kommen aus Frankräich":{p:[["Ech","je"],["kommen","viens"],["aus","de"],["Frankräich","France"]],n:"On dit « aus » pour le pays d'origine."},
+"Ech kommen aus der Belsch":{p:[["Ech","je"],["kommen","viens"],["aus der","de la"],["Belsch","Belgique"]]},
+"Ech wunnen an engem Appartement":{p:[["Ech","je"],["wunnen","habite"],["an","dans"],["engem","un"],["Appartement","appartement"]],n:"Pour dire où l'on est, on utilise le datif : « engem » (masculin et neutre), « enger » (féminin)."},
+"Ech wunnen an engem Haus":{p:[["Ech","je"],["wunnen","habite"],["an","dans"],["engem","un"],["Haus","maison"]]},
+"Ech schaffen zu Lëtzebuerg":{p:[["Ech","je"],["schaffen","travaille"],["zu","à"],["Lëtzebuerg","Luxembourg"]]},
+"Ech schwätzen Lëtzebuergesch":{p:[["Ech","je"],["schwätzen","parle"],["Lëtzebuergesch","luxembourgeois"]],n:"Pas d'article devant le nom de la langue. Avec « ech », le verbe garde sa forme en « -en »."},
+"Ech schwätzen Franséisch":{p:[["Ech","je"],["schwätzen","parle"],["Franséisch","français"]]},
+"Ech schwätzen Englesch":{p:[["Ech","je"],["schwätzen","parle"],["Englesch","anglais"]]},
+"Ech schwätzen e bëssen Däitsch":{p:[["Ech","je"],["schwätzen","parle"],["e bëssen","un peu"],["Däitsch","allemand"]]},
+"Ech schwätzen net gutt Lëtzebuergesch":{p:[["Ech","je"],["schwätzen","parle"],["net","pas"],["gutt","bien"],["Lëtzebuergesch","luxembourgeois"]]},
+"Ech verstinn Lëtzebuergesch":{p:[["Ech","je"],["verstinn","comprends"],["Lëtzebuergesch","luxembourgeois"]]},
+"Ech léieren Lëtzebuergesch":{p:[["Ech","je"],["léieren","apprends"],["Lëtzebuergesch","luxembourgeois"]]},
+"Wéi eng Sprooch schwätzt Dir?":{p:[["Wéi eng","quelle"],["Sprooch","langue"],["schwätzt","parlez"],["Dir","vous"]],n:"« Sprooch » est féminin, donc « wéi eng »."},
+"Meng Mammesprooch ass Franséisch":{p:[["Meng","ma"],["Mammesprooch","langue maternelle"],["ass","est"],["Franséisch","français"]]},
+"Kënnt Dir méi lues schwätzen?":{p:[["Kënnt","pouvez"],["Dir","vous"],["méi","plus"],["lues","lentement"],["schwätzen","parler"]]},
+"Kënnt Dir dat widderhuelen?":{p:[["Kënnt","pouvez"],["Dir","vous"],["dat","cela"],["widderhuelen","répéter"]]}
+};
+function partsHtml(lb){
+  const d=PARTS[lb];
+  if(!d) return "";
+  let h='<p class="pttl">Décomposition</p>'+d.p.map(x=>'<div class="pt"><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
+  if(d.n) h+='<p class="pnote">'+esc(d.n)+'</p>';
+  return h;
+}
+const LESSON_SIZE = 8;
+
+/* ---------- Sauvegarde (facultative) ---------- */
+const STORE = "letzebuergesch-v1";
+let state = {streak:0,last:"",boxes:{}};
+try{ const s = localStorage.getItem(STORE); if(s) state = Object.assign(state, JSON.parse(s)); }catch(e){}
+function save(){ try{ localStorage.setItem(STORE, JSON.stringify(state)); }catch(e){} }
+const box = w => state.boxes[w.key] || 0;
+const dayStr = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+function liveStreak(){
+  if(!state.last) return 0;
+  const today = dayStr(new Date());
+  const y = new Date(); y.setDate(y.getDate()-1);
+  return (state.last===today || state.last===dayStr(y)) ? state.streak : 0;
+}
+function markDay(){
+  const today = dayStr(new Date());
+  if(state.last===today) return;
+  const y = new Date(); y.setDate(y.getDate()-1);
+  state.streak = (state.last===dayStr(y)) ? state.streak+1 : 1;
+  state.last = today;
+}
+
+/* ---------- Outils ---------- */
+const $ = s => document.querySelector(s);
+const app = $("#app");
+const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; };
+const normFull = s => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9 ]/g,"").replace(/\s+/g," ").trim();
+const norm = s => normFull(s.toLowerCase().trim().replace(/^(d['’]|de |den )/,""));
+function esc(s){ const d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+
+/* ---------- Audio ---------- */
+const ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>';
+const synth = ("speechSynthesis" in window) ? window.speechSynthesis : null;
+let voices = [];
+function loadVoices(){ try{ voices = synth ? synth.getVoices() : []; }catch(e){ voices=[]; } }
+loadVoices();
+if(synth) synth.onvoiceschanged = loadVoices;
+function pickVoice(){
+  const lb = voices.find(v=>/^lb\b/i.test(v.lang.replace("_","-")));
+  if(lb) return {v:lb, exact:true};
+  const de = voices.find(v=>/^de[-_]?(DE|AT|CH|LU)?/i.test(v.lang));
+  return {v:de||null, exact:false};
+}
+let toastTimer; let audioLog=[];
+function toast(html){
+  let t=$("#toast");
+  if(!t){ t=document.createElement("div"); t.id="toast"; t.setAttribute("role","status"); document.body.appendChild(t); }
+  t.innerHTML=html; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),6000);
+}
+function speakTTS(text, retried){
+  if(!synth){ toast("L'audio n'est pas disponible sur ce navigateur."); return false; }
+  const clean = text.replace(/…/g,"").replace(/\s+/g," ").trim();
+  if(!voices.length) loadVoices();
+  if(!voices.length) toast("Aucune voix de synthèse détectée dans ce navigateur. Essayez la page dans Safari ou Chrome.");
+  const {v,exact} = pickVoice();
+  const u = new SpeechSynthesisUtterance(clean);
+  u.lang = exact ? v.lang : "de-DE";
+  if(v && !retried) u.voice = v;
+  u.rate = 0.85;
+  let started=false;
+  audioLog.push(retried?"nouvel essai":"lecture demandée");
+  u.onstart=()=>{ started=true; audioLog.push("démarré"); };
+  u.onend=()=>{ audioLog.push("terminé"); };
+  u.onerror=e=>{
+    audioLog.push("erreur : "+(e&&e.error));
+    if(e && e.error==="canceled"||e && e.error==="interrupted") return;
+    if(!retried){ speakTTS(text,true); return; }
+    toast("Le son n'a pas pu démarrer. Vérifiez le volume et le mode silencieux, ou essayez un autre navigateur.");
+  };
+  const run=()=>{
+    try{ synth.resume(); }catch(e){}
+    synth.speak(u);
+    setTimeout(()=>{ if(!started && !synth.speaking && !retried){ speakTTS(text,true); } }, 1500);
+  };
+  if(synth.speaking || synth.pending){ synth.cancel(); setTimeout(run,120); }
+  else run();
+  return exact;
+}
+function audioDiag(){
+  if(!synth) return "Synthèse vocale : non prise en charge par ce navigateur.";
+  loadVoices();
+  const {v,exact}=pickVoice();
+  return "Synthèse vocale : oui · voix détectées : "+voices.length+" · voix choisie : "+(v?esc(v.name)+" ("+esc(v.lang)+")":"aucune")+(exact?"":" · pas de voix luxembourgeoise");
+}
+/* Enregistrements du LOD (facultatifs) : audio-map.json et dossier audio/ à côté de la page */
+let AUDIO_MAP = {}; let player = null;
+function updateCredit(){
+  const c = $("#lodcredit");
+  if(c) c.textContent = Object.keys(AUDIO_MAP).length ? " Enregistrements : LOD (lod.lu), licence CC0." : "";
+}
+try{
+  fetch("audio-map.json").then(r=>r.ok?r.json():{}).then(m=>{ AUDIO_MAP=m||{}; updateCredit(); }).catch(()=>{});
+}catch(e){}
+function speak(text){
+  const file = AUDIO_MAP[text];
+  if(file){
+    audioLog.push("enregistrement du LOD");
+    try{
+      if(player){ player.pause(); }
+      if(synth) synth.cancel();
+      player = new Audio(file);
+      player.onerror = ()=>{ audioLog.push("fichier introuvable, synthèse"); speakTTS(text); };
+      const pr = player.play();
+      if(pr && pr.catch) pr.catch(()=>{ speakTTS(text); });
+      return true;
+    }catch(e){ return speakTTS(text); }
+  }
+  return speakTTS(text);
+}
+function approxNote(){
+  if(!synth) return "L'audio n'est pas disponible sur ce navigateur. Écoutez le mot sur <a href=\"https://lod.lu\" target=\"_blank\" rel=\"noopener\">lod.lu</a>.";
+  return pickVoice().exact ? "" : "Voix de synthèse approximative (aucune voix luxembourgeoise sur cet appareil). Pour la bonne prononciation, cherchez le mot sur <a href=\"https://lod.lu\" target=\"_blank\" rel=\"noopener\">lod.lu</a>.";
+}
+
+/* ---------- Grammaire ---------- */
+function why(lb){
+  const m = lb.match(/^(Den|De|D')\s?([^\s,?]+)$/);
+  if(!m) return "";
+  const a=m[1];
+  if(a==="D'") return "<b>d'</b> : article du féminin, du neutre et du pluriel. La forme ne dit pas lequel : apprenez le genre avec le mot.";
+  const first=m[2][0].toLowerCase();
+  const base=first.normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+  const vowel=/[aeiouy]/.test(base);
+  if(a==="Den") return "<b>den</b> : masculin. Le « n » est gardé car le mot commence par "+(vowel?"une voyelle":"« "+esc(first)+" »")+".";
+  return "<b>de</b> : masculin. Pas de « n » devant « "+esc(first)+" » : on ne le garde que devant une voyelle ou n, d, t, z, h.";
+}
+function grammar(){
+  app.innerHTML = `
+    <div class="top"><button class="close" id="gback" aria-label="Retour">‹</button><h1 style="font:800 24px var(--display);margin:0">de, den, d' : pourquoi ?</h1></div>
+    <div class="gtext">
+      <p>Comme en allemand, chaque nom luxembourgeois a un <b>genre</b> : masculin, féminin ou neutre. L'article « le / la / les » dépend de ce genre.</p>
+      <table class="art">
+        <tr><th>Genre</th><th>Article</th><th>Exemples</th></tr>
+        <tr><td>Masculin</td><td>de / den</td><td>de Wäin, den Zuch</td></tr>
+        <tr><td>Féminin</td><td>d'</td><td>d'Bank</td></tr>
+        <tr><td>Neutre</td><td>d'</td><td>d'Brout</td></tr>
+        <tr><td>Pluriel</td><td>d'</td><td>d'Zënsen</td></tr>
+      </table>
+      <h2>Pourquoi « d' » partout ?</h2>
+      <p>Le féminin, le neutre et le pluriel ont le même article. En voyant « d'Brout », on ne peut donc pas deviner si le mot est féminin, neutre ou pluriel. Il faut <b>apprendre le mot avec son article</b>, et c'est pour cela que l'app l'affiche toujours.</p>
+      <h2>De ou den ? La règle du « n »</h2>
+      <p>Pour le masculin, le « n » de <b>den</b> n'est gardé que devant une <b>voyelle</b> ou devant <b>n, d, t, z, h</b>. Devant toute autre lettre, on dit <b>de</b>.</p>
+      <p><span class="ex">den Auto</span> voyelle<br><span class="ex">den Zuch</span> z<br><span class="ex">de Wäin</span> w<br><span class="ex">de Kaffi</span> k</p>
+      <h2>Quand on insiste</h2>
+      <p>Pour dire « <i>ce</i> train-là », on utilise des formes plus fortes : <b>deen</b> (masculin), <b>déi</b> (féminin et pluriel), <b>dat</b> (neutre).</p>
+      <h2>Après une préposition</h2>
+      <p>Avec certaines prépositions (mat = avec, bei = chez…), la forme change : <b>dem</b> pour le masculin et le neutre, <b>der</b> pour le féminin. Exemple : <span class="ex">mat der Mamm</span> (avec la maman). Vous l'avez déjà vu dans « Et gëtt e Problem mat <b>der</b> Applikatioun ».</p>
+      <p style="color:var(--muted);font-size:14px;margin-top:22px">Ceci est un résumé. Pour le genre exact d'un mot, vérifiez sur <a href="https://lod.lu" target="_blank" rel="noopener" style="color:inherit">lod.lu</a>.</p>
+    </div>`;
+  $("#gback").onclick=home;
+  window.scrollTo(0,0);
+}
+
+/* ---------- Accueil ---------- */
+function home(){
+  const h = new Date().getHours();
+  const [lb,fr] = h<18 ? ["Moien","Bonjour"] : ["Gudden Owend","Bonsoir"];
+  const mastered = ALL.filter(w=>box(w)>=3).length;
+  app.innerHTML = `
+    <section class="hero">
+      <h1 class="hello">${esc(lb)}</h1>
+      <p class="fr">${esc(fr)}</p>
+    </section>
+    <div class="stats">
+      <div class="stat"><b>${liveStreak()}</b><span>jours d'affilée</span></div>
+      <div class="stat"><b>${mastered}/${ALL.length}</b><span>mots maîtrisés</span></div>
+    </div>
+    <button class="review" id="rev"><span>Révision mixte<br><small>Les mots les moins connus</small></span><span aria-hidden="true">›</span></button>
+    <button class="gram" id="gram"><span>Comprendre les articles<small>Pourquoi de, den ou d' ?</small></span><span aria-hidden="true">›</span></button>
+    <h2>Thèmes du quotidien</h2>
+    <div class="themes" id="themes-base"></div>
+    <h2>Au travail : banque et informatique</h2>
+    <p class="sub">Vocabulaire et phrases pour le guichet et le support client.</p>
+    <div class="themes" id="themes-pro"></div>
+    <p class="foot">Version 12 · Audio : voix de synthèse du téléphone, parfois approximative. Référence : <a href="https://lod.lu" target="_blank" rel="noopener">lod.lu</a>.<span id="lodcredit"></span><br><button id="audiotest">Tester l'audio</button> · Les progrès restent sur cet appareil. <button id="reset">Tout effacer</button></p>
+    <p class="foot diag hidden" id="diag" role="status"></p>`;
+  THEMES.forEach(t=>{
+    const box_ = $("#themes-"+(t.g||"base"));
+    const pct = Math.round(t.words.reduce((a,w)=>a+Math.min(box(w),4),0)/(t.words.length*4)*100);
+    const b = document.createElement("button");
+    b.className="theme";
+    b.innerHTML = `<span class="fill" style="width:${pct}%"></span><span class="row"><span class="name">${esc(t.name)}</span><span class="meta">${t.words.length} mots · ${pct} %</span></span>`;
+    b.onclick = ()=>startLesson(t.words);
+    box_.appendChild(b);
+  });
+  $("#rev").onclick = ()=>startLesson(ALL);
+  $("#gram").onclick = grammar;
+  updateCredit();
+  $("#audiotest").onclick=()=>{
+    let err=""; audioLog=[];
+    try{ speak("Moien"); }catch(e){ err=" · erreur : "+esc(String(e&&e.message||e)); }
+    const show=()=>{ $("#diag").innerHTML = audioDiag()+err+"<br>Événements : "+(audioLog.length?esc(audioLog.join(" → ")):"aucun"); };
+    show(); $("#diag").classList.remove("hidden");
+    setTimeout(show,2500);
+  };
+  $("#reset").onclick = ()=>{ if(confirm("Effacer toute votre progression ?")){ state={streak:0,last:"",boxes:{}}; save(); home(); } };
+}
+
+/* ---------- Leçon ---------- */
+let Q=[], idx=0, firstTry=0, total=0, pool=[], answered=false;
+
+function startLesson(words){
+  pool = words;
+  const sorted = shuffle(words).sort((a,b)=>box(a)-box(b));
+  const chosen = sorted.slice(0, Math.min(LESSON_SIZE, words.length));
+  Q = shuffle(chosen).map(w=>makeQ(w,false));
+  idx=0; firstTry=0; total=Q.length;
+  lessonShell();
+  showQ();
+}
+function makeQ(w,retry){
+  let type;
+  if(box(w)>=2 && Math.random()<0.5) type="type";
+  else type = Math.random()<0.5 ? "fr2lb" : "lb2fr";
+  return {w,type,retry};
+}
+function lessonShell(){
+  app.innerHTML = `
+    <div class="top"><button class="close" id="quit" aria-label="Quitter la leçon">×</button><div class="bar" role="progressbar" aria-label="Progression"><i id="prog"></i></div></div>
+    <div id="q"></div>
+    <div class="sheet hidden" id="sheet"><div class="in"><p class="msg" id="msg"></p><button class="listen" id="hear" type="button"></button><div class="scroll" id="scroll"><div id="parts"></div><p class="why" id="why"></p><p class="approx" id="approx"></p></div><button class="go" id="next">Continuer</button></div></div>`;
+  $("#quit").onclick = ()=>{ if(confirm("Quitter cette leçon ? Votre progression de la leçon sera perdue.")) home(); };
+}
+function showQ(){
+  answered=false;
+  const q = Q[idx];
+  $("#sheet").className="sheet hidden";
+  $("#prog").style.width = (idx/Q.length*100)+"%";
+  const el = $("#q");
+  if(q.type==="type"){
+    el.innerHTML = `<p class="instr">Écrivez en luxembourgeois</p><p class="prompt">${esc(q.w.fr)}</p>
+      <input class="typed" id="inp" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" aria-label="Votre réponse" placeholder="Votre réponse">
+      <p class="hint">Les accents ne sont pas obligatoires.</p>
+      <button class="go" id="check" style="margin-top:22px" disabled>Vérifier</button>
+      <button class="swap" id="swap" type="button">Choisir parmi des propositions</button>`;
+    $("#swap").onclick=()=>{ if(answered) return; q.type="fr2lb"; showQ(); };
+    const inp=$("#inp"), chk=$("#check");
+    inp.focus();
+    inp.oninput=()=>{ chk.disabled = !inp.value.trim(); };
+    inp.onkeydown=e=>{ if(e.key==="Enter" && inp.value.trim() && !answered) checkTyped(); };
+    chk.onclick=()=>{ if(!answered) checkTyped(); };
+    return;
+  }
+  const fromFr = q.type==="fr2lb";
+  const correct = fromFr ? q.w.lb : q.w.fr;
+  const samePool = ALL.filter(x=>x.theme===q.w.theme && x.key!==q.w.key);
+  const others = shuffle(samePool.length>=3 ? samePool : ALL.filter(x=>x.key!==q.w.key)).slice(0,3).map(x=>fromFr?x.lb:x.fr);
+  const opts = shuffle([correct,...others]);
+  el.innerHTML = `<p class="instr">${fromFr?"Comment dit-on en luxembourgeois ?":"Que veut dire ce mot ?"}</p>
+    ${fromFr?`<p class="prompt">${esc(q.w.fr)}</p>`:`<div class="promptrow"><p class="prompt">${esc(q.w.lb)}</p><button class="speak" id="say" type="button" aria-label="Écouter le mot">${ICON}</button></div>`}<div class="choices" id="ch"></div>${fromFr?'<button class="swap" id="swap" type="button">Écrire la réponse</button>':''}`;
+  if(!fromFr){ $("#say").onclick=()=>speak(q.w.lb); }
+  else { $("#swap").onclick=()=>{ if(answered) return; q.type="type"; showQ(); }; }
+  opts.forEach(o=>{
+    const b=document.createElement("button");
+    b.className="choice"; b.textContent=o;
+    b.onclick=()=>{ if(answered) return; answer(o===correct, correct, b); };
+    $("#ch").appendChild(b);
+  });
+}
+function checkTyped(){
+  const q=Q[idx], inp=$("#inp");
+  const ok = normFull(inp.value)===normFull(q.w.lb) || norm(inp.value)===norm(q.w.lb);
+  inp.readOnly=true; inp.classList.add(ok?"good":"bad");
+  $("#check").classList.add("hidden");
+  answer(ok, q.w.lb, null);
+}
+function answer(ok, correct, btn){
+  answered=true;
+  const q=Q[idx];
+  const sw=$("#swap"); if(sw) sw.classList.add("hidden");
+  if(q.type!=="type"){
+    document.querySelectorAll(".choice").forEach(c=>{
+      c.disabled=true;
+      if(c.textContent===correct) c.classList.add("good");
+    });
+    if(btn && !ok) btn.classList.add("bad");
+  }
+  const w=q.w;
+  state.boxes[w.key] = ok ? Math.min(box(w)+1,5) : 0;
+  if(ok && !q.retry) firstTry++;
+  if(!ok && !q.retry) Q.push(makeQ(w,true));
+  const sheet=$("#sheet");
+  sheet.className="sheet "+(ok?"good":"bad");
+  $("#msg").innerHTML = ok ? "Correct !" : `Pas tout à fait<span>Réponse : ${esc(correct)}</span>`;
+  $("#hear").innerHTML = ICON + "Écouter : " + esc(w.lb);
+  $("#hear").onclick = ()=>speak(w.lb);
+  $("#parts").innerHTML = partsHtml(w.lb);
+  $("#scroll").scrollTop = 0;
+  $("#why").innerHTML = why(w.lb);
+  $("#why").classList.toggle("hidden", !$("#why").innerHTML);
+  $("#approx").innerHTML = AUDIO_MAP[w.lb] ? "" : approxNote();
+  $("#approx").classList.toggle("hidden", !$("#approx").innerHTML);
+  const last = idx===Q.length-1;
+  $("#next").textContent = last ? "Terminer" : "Continuer";
+  $("#next").onclick = ()=>{ if(last) finish(); else { idx++; showQ(); } };
+  $("#next").focus();
+  save();
+}
+function finish(){
+  markDay(); save();
+  app.innerHTML = `<div class="done">
+    <p class="score">${firstTry}/${total}</p>
+    <h2>${firstTry===total?"Parfait !":"Leçon terminée"}</h2>
+    <p>${firstTry} bonnes réponses du premier coup.<br>Série : ${state.streak} jour${state.streak>1?"s":""}.</p>
+    <button class="go" id="again" style="margin-top:22px">Refaire une leçon</button>
+    <button class="go" id="back" style="margin-top:10px;background:var(--surface);color:var(--ink);border:1px solid var(--line)">Retour aux thèmes</button></div>`;
+  $("#again").onclick=()=>startLesson(pool);
+  $("#back").onclick=home;
+}
+
+home();
+</script>
+</body>
+</html>
