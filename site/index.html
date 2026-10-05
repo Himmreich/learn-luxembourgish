@@ -214,7 +214,7 @@ const PARTS = {
 "Ech weess et net":{p:[["Ech","je"],["weess","sais"],["et","cela"],["net","pas"]]},
 "Schwätzt Dir Franséisch?":{p:[["Schwätzt","parlez"],["Dir","vous"],["Franséisch","français"]],n:"Pour poser une question, on inverse le verbe et le sujet : « Schwätzt Dir… ? » (parlez-vous… ?)."},
 "Wat kascht dat?":{p:[["Wat","quoi"],["kascht","coûte"],["dat","cela"]]},
-"Ech si midd":{p:[["Ech","je"],["si","suis"],["midd","fatigué"]]},
+"Ech si midd":{p:[["Ech","je"],["si","suis"],["midd","fatigué"]],n:"« si » est « sinn » (être) sans son n, car « midd » commence par m (règle du n)."},
 "Wéi kann ech Iech hëllefen?":{p:[["Wéi","comment"],["kann","peux"],["ech","je"],["Iech","vous"],["hëllefen","aider"]],n:"L'infinitif (« hëllefen ») se place à la fin de la phrase."},
 "Ech wéilt e Kont opmaachen":{p:[["Ech","je"],["wéilt","voudrais"],["e","un"],["Kont","compte"],["opmaachen","ouvrir"]],n:"« wéilt » est le conditionnel de wëllen (vouloir). L'infinitif « opmaachen » va à la fin."},
 "Ech wéilt eng Iwwerweisung maachen":{p:[["Ech","je"],["wéilt","voudrais"],["eng","une"],["Iwwerweisung","virement"],["maachen","faire"]],n:"« Iwwerweisung » est féminin, donc « eng » (et non « e »)."},
@@ -239,7 +239,7 @@ const PARTS = {
 "Net esou gutt":{p:[["Net","pas"],["esou","si"],["gutt","bien"]]},
 "Et geet mer net gutt":{p:[["Et","ça"],["geet","va"],["mer","à moi"],["net","pas"],["gutt","bien"]],n:"« mer » est la forme courte de « mir » (à moi). « Et geet mer gutt » = « ça va bien pour moi »."},
 "Et geet mer schlecht":{p:[["Et","ça"],["geet","va"],["mer","à moi"],["schlecht","mal"]]},
-"Ech si krank":{p:[["Ech","je"],["si","suis"],["krank","malade"]]},
+"Ech si krank":{p:[["Ech","je"],["si","suis"],["krank","malade"]],n:"« si » est « sinn » (être) avec la règle du n : le « n » tombe devant k, m, f… Devant une voyelle ou n, d, t, z, h, on garde « sinn » (Ech sinn daf)."},
 "An Iech?":{p:[["An","et"],["Iech","vous"]],n:"Pour renvoyer la question : « Gutt, an Iech ? » (bien, et vous ?). « Iech » est la forme de politesse."},
 "Wéi geet et Iech?":{p:[["Wéi","comment"],["geet","va"],["et","ça"],["Iech","(à) vous"]],n:"C'est la forme de politesse. Avec un ami, on dit simplement « Wéi geet et ? »."},
 "Alles gutt?":{p:[["Alles","tout"],["gutt","bien"]]},
@@ -419,6 +419,7 @@ function grammar(){
       <h2>De ou den ? La règle du « n »</h2>
       <p>Pour le masculin, le « n » de <b>den</b> n'est gardé que devant une <b>voyelle</b> ou devant <b>n, d, t, z, h</b>. Devant toute autre lettre, on dit <b>de</b>.</p>
       <p><span class="ex">den Auto</span> voyelle<br><span class="ex">den Zuch</span> z<br><span class="ex">de Wäin</span> w<br><span class="ex">de Kaffi</span> k</p>
+      <p>Cette règle ne concerne pas que les articles : elle s'applique aussi à la fin des verbes. « Je suis » se dit <b>ech sinn</b> devant une voyelle ou n, d, t, z, h (<span class="ex">Ech sinn daf</span>), et <b>ech si</b> devant les autres lettres (<span class="ex">Ech si krank</span>, <span class="ex">Ech si midd</span>). Les deux formes sont donc justes : c'est la lettre suivante qui décide. À l'écrit, vous pouvez taper l'une ou l'autre dans l'app.</p>
       <h2>Quand on insiste</h2>
       <p>Pour dire « <i>ce</i> train-là », on utilise des formes plus fortes : <b>deen</b> (masculin), <b>déi</b> (féminin et pluriel), <b>dat</b> (neutre).</p>
       <h2>Après une préposition</h2>
@@ -450,7 +451,7 @@ function home(){
     <h2>Au travail : banque et informatique</h2>
     <p class="sub">Vocabulaire et phrases pour le guichet et le support client.</p>
     <div class="themes" id="themes-pro"></div>
-    <p class="foot">Version 12 · Audio : voix de synthèse du téléphone, parfois approximative. Référence : <a href="https://lod.lu" target="_blank" rel="noopener">lod.lu</a>.<span id="lodcredit"></span><br><button id="audiotest">Tester l'audio</button> · Les progrès restent sur cet appareil. <button id="reset">Tout effacer</button></p>
+    <p class="foot">Version 13 · Audio : voix de synthèse du téléphone, parfois approximative. Référence : <a href="https://lod.lu" target="_blank" rel="noopener">lod.lu</a>.<span id="lodcredit"></span><br><button id="audiotest">Tester l'audio</button> · Les progrès restent sur cet appareil. <button id="reset">Tout effacer</button></p>
     <p class="foot diag hidden" id="diag" role="status"></p>`;
   THEMES.forEach(t=>{
     const box_ = $("#themes-"+(t.g||"base"));
@@ -537,7 +538,8 @@ function showQ(){
 }
 function checkTyped(){
   const q=Q[idx], inp=$("#inp");
-  const ok = normFull(inp.value)===normFull(q.w.lb) || norm(inp.value)===norm(q.w.lb);
+  const nlen = t => norm(t).split(" ").map(x=>x.replace(/n+$/,"")).join(" ");
+  const ok = normFull(inp.value)===normFull(q.w.lb) || norm(inp.value)===norm(q.w.lb) || nlen(inp.value)===nlen(q.w.lb);
   inp.readOnly=true; inp.classList.add(ok?"good":"bad");
   $("#check").classList.add("hidden");
   answer(ok, q.w.lb, null);
