@@ -3,11 +3,13 @@
 Associe les mots de l'app Lëtzebuergesch aux entrées du LOD (données CC0)
 et télécharge leurs enregistrements audio.
 
+Les mots sont lus directement dans site/index.html (option --html), ou dans un words.json (option --words).
+
 Étape 1 (sans rien télécharger, pour vérifier les correspondances) :
-    python3 build_audio.py --xml data/new_lod-art.xml --words words.json --out out
+    python3 tools/build_audio.py --xml data/new_lod-art.xml --html site/index.html --out build
 
 Étape 2 (télécharge les audios) :
-    python3 build_audio.py --xml data/new_lod-art.xml --words words.json --out out --download
+    python3 tools/build_audio.py --xml data/new_lod-art.xml --html site/index.html --out build --download
 
 Résultat dans le dossier out/ :
     report.csv        un mot par ligne : statut, entrée du LOD trouvée, genre, traductions
@@ -31,6 +33,23 @@ AUDIO_URL = "https://lod.lu/uploads/AAC/{id}.m4a"
 EXAMPLE_URL = "https://lod.lu/uploads/examples/AAC/{p}/{id}.m4a"
 REGISTERS = {"EGS", "FAM", "GEHUEW", "KANNERSPROOCH", "NEOL", "PEJ", "VEREELZT", "VULG"}
 NOUN_RE = re.compile(r"(Den|De|D')\s?([^\s,?!…]+)")
+
+
+def words_from_html(path):
+    """Lit la liste THEMES (paires [français, luxembourgeois]) directement dans index.html."""
+    src = Path(path).read_text(encoding="utf-8")
+    start = src.index("const THEMES = [")
+    end = src.index("THEMES.forEach", start)
+    pair = r'\["((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"\]'
+    theme, words = None, []
+    for m in re.finditer(r'id:"([^"]+)"|' + pair, src[start:end]):
+        if m.group(1):
+            theme = m.group(1)
+        else:
+            words.append({"theme": theme,
+                          "fr": json.loads('"' + m.group(2) + '"'),
+                          "lb": json.loads('"' + m.group(3) + '"')})
+    return words
 
 
 def key(text):
@@ -166,14 +185,21 @@ def download(url, dest, pause=0.25):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--xml", required=True, help="fichier new_lod-art.xml du LOD")
-    ap.add_argument("--words", required=True, help="words.json exporté depuis l'app")
+    ap.add_argument("--html", help="page de l'app (site/index.html) : les mots y sont lus directement")
+    ap.add_argument("--words", help="ou un fichier words.json")
     ap.add_argument("--out", default="out", help="dossier de sortie")
     ap.add_argument("--download", action="store_true", help="télécharge réellement les audios")
     args = ap.parse_args()
 
     out = Path(args.out)
     (out / "audio").mkdir(parents=True, exist_ok=True)
-    words = json.loads(Path(args.words).read_text(encoding="utf-8"))
+    if args.html:
+        words = words_from_html(args.html)
+    elif args.words:
+        words = json.loads(Path(args.words).read_text(encoding="utf-8"))
+    else:
+        sys.exit("Indiquez --html site/index.html (ou --words words.json)")
+    print(f"{len(words)} mots lus dans l'app.", flush=True)
 
     print("Lecture du dictionnaire (une minute environ)...", flush=True)
     lemmas, examples, n = parse_lod(args.xml)

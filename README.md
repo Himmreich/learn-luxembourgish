@@ -24,31 +24,30 @@ L'app est alors disponible sur `http://ADRESSE_DU_SERVEUR:8081`.
 
 La progression est enregistrée dans le navigateur, **par adresse** : gardez la même adresse et le même port.
 
-## Ajouter les vrais enregistrements du LOD (facultatif)
+## Les enregistrements du LOD sont ajoutés automatiquement
 
-Sans enregistrements, l'app utilise la voix de synthèse de l'appareil (approximative pour le luxembourgeois).
-Les enregistrements du [Lëtzebuerger Online Dictionnaire](https://lod.lu) sont publiés en open data (licence CC0).
+À la construction de l'image, Docker télécharge le dictionnaire du
+[Lëtzebuerger Online Dictionnaire](https://lod.lu) (données ouvertes, licence CC0), retrouve chaque mot de l'app et
+télécharge son enregistrement. Il n'y a rien d'autre à faire : `docker compose up -d --build` suffit.
 
-1. Téléchargez le fichier du dictionnaire (voir « linguistesch Daten » sur
-   [data.public.lu](https://data.public.lu/fr/datasets/letzebuerger-online-dictionnaire-lod-linguistesch-daten/))
-   et décompressez-le pour obtenir `data/new_lod-art.xml` (ce dossier n'est pas versionné, il pèse 100 Mo).
-2. Vérifiez les correspondances (rien n'est téléchargé) :
-   ```bash
-   python3 tools/build_audio.py --xml data/new_lod-art.xml --words tools/words.json --out build
-   ```
-   Lisez le résumé, et `build/report.csv` pour le détail (mots introuvables, genre différent...).
-3. Téléchargez les audios :
-   ```bash
-   python3 tools/build_audio.py --xml data/new_lod-art.xml --words tools/words.json --out build --download
-   ```
-4. Copiez le résultat dans le site, puis versionnez-le et redéployez :
-   ```bash
-   cp -r build/audio build/audio-map.json site/
-   git add site && git commit -m "Ajout des enregistrements du LOD" && git push
-   docker compose up -d --build
-   ```
+- Le premier build est plus long (quelques minutes) et nécessite un accès à Internet.
+- Les mots sans enregistrement (la plupart des phrases) restent en voix de synthèse.
+- Si le LOD est injoignable pendant le build, l'image est quand même construite, sans enregistrements.
+- **Voir le résumé des correspondances** (mots introuvables, genre différent...) :
+  `docker compose build --no-cache --progress=plain 2>&1 | grep -A40 "Résumé"`
+- **Mettre à jour les enregistrements** (nouvelle version du dictionnaire, nouveaux mots) :
+  `docker compose build --no-cache && docker compose up -d`. Sans `--no-cache`, Docker réutilise l'étape déjà construite
+  tant que `tools/` et `site/index.html` n'ont pas changé.
+- Les mots sont lus directement dans `site/index.html` : aucune liste à maintenir à part.
 
-Quand l'app gagne de nouveaux mots, `tools/words.json` doit être mis à jour (la liste des mots et phrases de l'app).
+### Sans Docker (facultatif)
+
+```bash
+python3 tools/fetch_lod.py --out data/new_lod-art.xml
+python3 tools/build_audio.py --xml data/new_lod-art.xml --html site/index.html --out build            # vérification
+python3 tools/build_audio.py --xml data/new_lod-art.xml --html site/index.html --out build --download  # téléchargement
+cp -r build/audio build/audio-map.json site/
+```
 
 ## Option : image prête à l'emploi sur ghcr.io
 
@@ -61,7 +60,7 @@ L'image est construite pour des machines de type PC (amd64).
 
 ```
 site/            la page (index.html), et audio/ + audio-map.json si générés
-tools/           script de téléchargement des enregistrements et liste des mots
+tools/           scripts de téléchargement du dictionnaire et des enregistrements
 Dockerfile       nginx qui sert le dossier site/
 docker-compose.yml
 nginx.conf
