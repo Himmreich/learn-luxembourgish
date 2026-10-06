@@ -1,0 +1,22 @@
+{
+  "id": "manger",
+  "title": "Manger et boire",
+  "items": [
+    {"id":"manger.d-brout","fr":"Le pain","lb":"D'Brout","gender":"n"},
+    {"id":"manger.d-waasser","fr":"L'eau","lb":"D'Waasser","gender":"n"},
+    {"id":"manger.d-mellech","fr":"Le lait","lb":"D'Mëllech","gender":"f"},
+    {"id":"manger.d-apel","fr":"La pomme","lb":"D'Apel","gender":"f"},
+    {"id":"manger.de-keis","fr":"Le fromage","lb":"De Kéis","gender":"m"},
+    {"id":"manger.de-kaffi","fr":"Le café","lb":"De Kaffi","gender":"m"},
+    {"id":"manger.d-beier","fr":"La bière","lb":"D'Béier","gender":"f"},
+    {"id":"manger.de-wain","fr":"Le vin","lb":"De Wäin","gender":"m"},
+    {"id":"manger.d-fleesch","fr":"La viande","lb":"D'Fleesch","gender":"n"},
+    {"id":"manger.de-fesch","fr":"Le poisson","lb":"De Fësch","gender":"m"},
+    {"id":"manger.ech-hatt-gar-e-kaffi","fr":"Je voudrais un café","lb":"Ech hätt gär e Kaffi","parts":[["Ech","je"],["hätt","aurais (conditionnel de hunn, avoir)"],["gär","volontiers"],["e","un"],["Kaffi","café"]],"note":"« hunn gär » (avoir volontiers) veut dire aimer. Au conditionnel, « Ech hätt gär… » donne « j'aimerais… », donc « je voudrais… ». Le petit mot « e » est « un » au masculin (« en » devant une voyelle ou n, d, t, z, h ; « eng » au féminin)."},
+    {"id":"manger.d-rechnung-wannechgelift","fr":"L'addition, s'il vous plaît","lb":"D'Rechnung, wannechgelift","parts":[["D'Rechnung","l'addition"],["wannechgelift","s'il vous plaît"]]},
+    {"id":"manger.iessen","fr":"Manger","lb":"Iessen"},
+    {"id":"manger.drenken","fr":"Boire","lb":"Drénken"},
+    {"id":"manger.huelen","fr":"Prendre","lb":"Huelen","note":"Au présent : ech huelen, du hëls, hien hëlt. Seuls « du » et « hien » changent de voyelle (hëls, hëlt)."},
+    {"id":"manger.wellen","fr":"Vouloir","lb":"Wëllen","note":"Au présent : ech wëll, du wëlls, hien wëll, mir wëllen, dir wëllt, si wëllen."}
+  ]
+}

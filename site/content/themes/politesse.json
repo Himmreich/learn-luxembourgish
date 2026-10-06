@@ -1,0 +1,14 @@
+{
+  "id": "politesse",
+  "title": "Politesse et se faire comprendre",
+  "items": [
+    {"id":"politesse.gudde-moien","fr":"Bonjour (le matin)","lb":"Gudde Moien","parts":[["Gudde","bon"],["Moien","matin"]],"note":"« Moien » seul se dit toute la journée. « Gudde » perd son n devant M (règle du n), alors qu'on dit « Gudden Owend » devant une voyelle."},
+    {"id":"politesse.gudde-metteg","fr":"Bonjour (l'après-midi)","lb":"Gudde Mëtteg","parts":[["Gudde","bon"],["Mëtteg","midi, après-midi"]]},
+    {"id":"politesse.villmools-merci","fr":"Merci beaucoup","lb":"Villmools Merci","parts":[["Villmools","beaucoup"],["Merci","merci"]]},
+    {"id":"politesse.bis-geschwenn","fr":"À bientôt","lb":"Bis geschwënn","parts":[["Bis","jusqu'à"],["geschwënn","bientôt"]]},
+    {"id":"politesse.bis-herno","fr":"À plus tard","lb":"Bis herno","parts":[["Bis","jusqu'à"],["herno","tout à l'heure"]]},
+    {"id":"politesse.et-deet-mir-leed","fr":"Je suis désolé","lb":"Et deet mir Leed","parts":[["Et","cela"],["deet","fait"],["mir","à moi"],["Leed","de la peine"]],"note":"Littéralement « cela me fait de la peine »."},
+    {"id":"politesse.et-ass-net-schlemm","fr":"Ce n'est pas grave","lb":"Et ass net schlëmm","parts":[["Et","cela"],["ass","est"],["net","pas"],["schlëmm","grave"]]},
+    {"id":"politesse.wei-seet-een-dat-op-letzebuergesch","fr":"Comment dit-on cela en luxembourgeois ?","lb":"Wéi seet een dat op Lëtzebuergesch?","parts":[["Wéi","comment"],["seet","dit"],["een","on"],["dat","cela"],["op Lëtzebuergesch","en luxembourgeois"]],"note":"« een » veut dire « on » : « seet een » = « dit-on »."}
+  ]
+}

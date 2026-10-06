@@ -1,0 +1,13 @@
+{
+  "id": "jours",
+  "title": "Les jours de la semaine",
+  "items": [
+    {"id":"jours.de-meindeg","fr":"Lundi","lb":"De Méindeg","gender":"m"},
+    {"id":"jours.den-denschdeg","fr":"Mardi","lb":"Den Dënschdeg","gender":"m"},
+    {"id":"jours.de-mettwoch","fr":"Mercredi","lb":"De Mëttwoch","gender":"m"},
+    {"id":"jours.den-donneschdeg","fr":"Jeudi","lb":"Den Donneschdeg","gender":"m"},
+    {"id":"jours.de-freideg","fr":"Vendredi","lb":"De Freideg","gender":"m"},
+    {"id":"jours.de-samschdeg","fr":"Samedi","lb":"De Samschdeg","gender":"m"},
+    {"id":"jours.de-sonndeg","fr":"Dimanche","lb":"De Sonndeg","gender":"m"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "transport",
+  "title": "Se déplacer",
+  "items": [
+    {"id":"transport.den-zuch","fr":"Le train","lb":"Den Zuch","gender":"m"},
+    {"id":"transport.de-bus","fr":"Le bus","lb":"De Bus","gender":"m"},
+    {"id":"transport.d-gare","fr":"La gare","lb":"D'Gare","gender":"f"},
+    {"id":"transport.den-auto","fr":"La voiture","lb":"Den Auto","gender":"m"},
+    {"id":"transport.de-velo","fr":"Le vélo","lb":"De Velo","gender":"m"},
+    {"id":"transport.de-fluchhafen","fr":"L'aéroport","lb":"De Fluchhafen","gender":"m"},
+    {"id":"transport.d-strooss","fr":"La rue","lb":"D'Strooss","gender":"f"},
+    {"id":"transport.wou-ass-d-gare","fr":"Où est la gare ?","lb":"Wou ass d'Gare?","parts":[["Wou","où"],["ass","est"],["d'Gare","la gare"]]},
+    {"id":"transport.lenks","fr":"À gauche","lb":"Lénks"},
+    {"id":"transport.riets","fr":"À droite","lb":"Riets"},
+    {"id":"transport.riichtaus","fr":"Tout droit","lb":"Riichtaus"},
+    {"id":"transport.ech-huelen-de-bus","fr":"Je prends le bus","lb":"Ech huelen de Bus","parts":[["Ech","je"],["huelen","prends"],["de Bus","le bus"]],"note":"« huelen » (prendre) sert aussi pour les transports."},
+    {"id":"transport.ech-well-den-zuch-huelen","fr":"Je veux prendre le train","lb":"Ech wëll den Zuch huelen","parts":[["Ech","je"],["wëll","veux"],["den Zuch","le train"],["huelen","prendre"]],"note":"L'infinitif « huelen » se place à la fin de la phrase. « den Zuch » : le n est gardé devant z (règle du n)."},
+    {"id":"transport.hels-du-de-bus","fr":"Tu prends le bus ?","lb":"Hëls du de Bus?","parts":[["Hëls","prends"],["du","tu"],["de Bus","le bus"]],"note":"Avec « du », « huelen » devient « hëls ». La question s'obtient en mettant le verbe en premier."}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "phrases",
+  "title": "Phrases utiles",
+  "items": [
+    {"id":"phrases.ech-heeschen","fr":"Je m'appelle…","lb":"Ech heeschen…","parts":[["Ech","je"],["heeschen","m'appelle"]]},
+    {"id":"phrases.ech-verstinn-net","fr":"Je ne comprends pas","lb":"Ech verstinn net","parts":[["Ech","je"],["verstinn","comprends"],["net","pas"]]},
+    {"id":"phrases.ech-weess-et-net","fr":"Je ne sais pas","lb":"Ech weess et net","parts":[["Ech","je"],["weess","sais"],["et","cela"],["net","pas"]]},
+    {"id":"phrases.schwatzt-dir-franseisch","fr":"Parlez-vous français ?","lb":"Schwätzt Dir Franséisch?","parts":[["Schwätzt","parlez"],["Dir","vous"],["Franséisch","français"]],"note":"Pour poser une question, on inverse le verbe et le sujet : « Schwätzt Dir… ? » (parlez-vous… ?)."},
+    {"id":"phrases.wat-kascht-dat","fr":"Combien ça coûte ?","lb":"Wat kascht dat?","parts":[["Wat","quoi"],["kascht","coûte"],["dat","cela"]]},
+    {"id":"phrases.ech-si-midd","fr":"Je suis fatigué","lb":"Ech si midd","parts":[["Ech","je"],["si","suis"],["midd","fatigué"]],"note":"« si » est « sinn » (être) sans son n, car « midd » commence par m (règle du n)."}
+  ]
+}

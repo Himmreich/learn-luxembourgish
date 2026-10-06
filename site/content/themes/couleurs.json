@@ -1,0 +1,18 @@
+{
+  "id": "couleurs",
+  "title": "Les couleurs",
+  "items": [
+    {"id":"couleurs.rout","fr":"Rouge","lb":"Rout"},
+    {"id":"couleurs.blo","fr":"Bleu","lb":"Blo"},
+    {"id":"couleurs.greng","fr":"Vert","lb":"Gréng"},
+    {"id":"couleurs.giel","fr":"Jaune","lb":"Giel"},
+    {"id":"couleurs.schwaarz","fr":"Noir","lb":"Schwaarz"},
+    {"id":"couleurs.waiss","fr":"Blanc","lb":"Wäiss"},
+    {"id":"couleurs.brong","fr":"Marron","lb":"Brong"},
+    {"id":"couleurs.gro","fr":"Gris","lb":"Gro"},
+    {"id":"couleurs.orange","fr":"Orange","lb":"Orange"},
+    {"id":"couleurs.rosa","fr":"Rose","lb":"Rosa"},
+    {"id":"couleurs.rout-waiss-blo","fr":"Rouge-blanc-bleu (le drapeau luxembourgeois)","lb":"Rout-Wäiss-Blo","parts":[["Rout","rouge"],["Wäiss","blanc"],["Blo","bleu"]],"note":"Les couleurs du drapeau luxembourgeois."},
+    {"id":"couleurs.de-roude-leiw","fr":"Le lion rouge (emblème du Luxembourg)","lb":"De Roude Léiw","parts":[["De","le"],["Roude","rouge"],["Léiw","lion"]],"note":"Après l'article, l'adjectif prend une terminaison : « rout » devient « roude » (comme « gudde » dans « Gudde Moien »)."}
+  ]
+}

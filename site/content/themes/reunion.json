@@ -1,0 +1,18 @@
+{
+  "id": "reunion",
+  "title": "Réunions : vocabulaire",
+  "items": [
+    {"id":"reunion.d-reunioun","fr":"La réunion","lb":"D'Reunioun","gender":"f"},
+    {"id":"reunion.d-sitzung","fr":"La séance","lb":"D'Sitzung","gender":"f"},
+    {"id":"reunion.d-dagesuerdnung","fr":"L'ordre du jour","lb":"D'Dagesuerdnung","gender":"f"},
+    {"id":"reunion.de-virschlag","fr":"La proposition","lb":"De Virschlag","gender":"m"},
+    {"id":"reunion.d-decisioun","fr":"La décision","lb":"D'Decisioun","gender":"f"},
+    {"id":"reunion.d-fro","fr":"La question","lb":"D'Fro","gender":"f"},
+    {"id":"reunion.d-equipe","fr":"L'équipe","lb":"D'Equipe","gender":"f"},
+    {"id":"reunion.d-zesummenaarbecht","fr":"La collaboration","lb":"D'Zesummenaarbecht","gender":"f"},
+    {"id":"reunion.d-aarbecht","fr":"Le travail","lb":"D'Aarbecht","gender":"f"},
+    {"id":"reunion.d-zait","fr":"Le temps","lb":"D'Zäit","gender":"f","note":"« d'Zäit » est le temps qui passe : « Ech hu keng Zäit » (je n'ai pas le temps)."},
+    {"id":"reunion.de-chef","fr":"Le chef","lb":"De Chef","gender":"m"},
+    {"id":"reunion.divers","fr":"Divers (dernier point de l'ordre du jour)","lb":"Divers"}
+  ]
+}

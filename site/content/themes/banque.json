@@ -1,0 +1,18 @@
+{
+  "id": "banque",
+  "title": "Banque : vocabulaire",
+  "items": [
+    {"id":"banque.d-bank","fr":"La banque","lb":"D'Bank","gender":"f"},
+    {"id":"banque.de-kont","fr":"Le compte","lb":"De Kont","gender":"m"},
+    {"id":"banque.d-iwwerweisung","fr":"Le virement","lb":"D'Iwwerweisung","gender":"f"},
+    {"id":"banque.de-client","fr":"Le client","lb":"De Client"},
+    {"id":"banque.de-solde","fr":"Le solde","lb":"De Solde"},
+    {"id":"banque.d-bankkaart","fr":"La carte bancaire","lb":"D'Bankkaart","gender":"f"},
+    {"id":"banque.de-montant","fr":"Le montant","lb":"De Montant"},
+    {"id":"banque.d-geld","fr":"L'argent","lb":"D'Geld","gender":"n"},
+    {"id":"banque.d-zensen","fr":"Les intérêts","lb":"D'Zënsen","gender":"pl"},
+    {"id":"banque.den-zenssaz","fr":"Le taux d'intérêt","lb":"Den Zënssaz","gender":"m"},
+    {"id":"banque.de-bancomat","fr":"Le distributeur de billets","lb":"De Bancomat"},
+    {"id":"banque.d-ennerschreft","fr":"La signature","lb":"D'Ënnerschrëft","gender":"f"}
+  ]
+}

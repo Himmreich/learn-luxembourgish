@@ -1,0 +1,23 @@
+{
+  "id": "reunion-phrases",
+  "title": "Réunions : phrases",
+  "items": [
+    {"id":"reunion-phrases.hei-ass-d-dagesuerdnung","fr":"Voici l'ordre du jour","lb":"Hei ass d'Dagesuerdnung","parts":[["Hei","ici"],["ass","est"],["d'Dagesuerdnung","l'ordre du jour"]]},
+    {"id":"reunion-phrases.um-wei-vill-auer-fankt-d-reunioun-un","fr":"À quelle heure commence la réunion ?","lb":"Um wéi vill Auer fänkt d'Reunioun un?","parts":[["Um","à"],["wéi vill Auer","quelle heure"],["fänkt … un","commence"],["d'Reunioun","la réunion"]],"note":"« ufänken » (commencer) est un verbe à particule séparable : « fänkt » est au début, « un » part à la fin de la phrase."},
+    {"id":"reunion-phrases.d-reunioun-fankt-um-zwou-auer-un","fr":"La réunion commence à deux heures","lb":"D'Reunioun fänkt um zwou Auer un","parts":[["D'Reunioun","la réunion"],["fänkt … un","commence"],["um","à"],["zwou Auer","deux heures"]],"note":"« zwou » (et non « zwee ») devant « Auer », qui est féminin."},
+    {"id":"reunion-phrases.weini-ass-dei-nachst-reunioun","fr":"Quand a lieu la prochaine réunion ?","lb":"Wéini ass déi nächst Reunioun?","parts":[["Wéini","quand"],["ass","est"],["déi nächst","la prochaine"],["Reunioun","réunion"]],"note":"Devant un adjectif comme « nächst » (prochain), le féminin se dit souvent « déi » plutôt que « d' »."},
+    {"id":"reunion-phrases.et-handelt-sech-em-e-problem","fr":"Il s'agit d'un problème","lb":"Et handelt sech ëm e Problem","parts":[["Et handelt sech","il s'agit"],["ëm","de"],["e","un"],["Problem","problème"]]},
+    {"id":"reunion-phrases.ech-hunn-eng-fro","fr":"J'ai une question","lb":"Ech hunn eng Fro","parts":[["Ech","je"],["hunn","ai"],["eng","une"],["Fro","question"]],"note":"« Fro » est féminin : « eng Fro »."},
+    {"id":"reunion-phrases.kennt-dir-dat-erklaren","fr":"Pouvez-vous expliquer cela ?","lb":"Kënnt Dir dat erklären?","parts":[["Kënnt","pouvez"],["Dir","vous"],["dat","cela"],["erklären","expliquer"]],"note":"L'infinitif « erklären » va à la fin de la phrase."},
+    {"id":"reunion-phrases.wat-denkt-dir-doriwwer","fr":"Qu'en pensez-vous ?","lb":"Wat denkt Dir doriwwer?","parts":[["Wat","que"],["denkt","pensez"],["Dir","vous"],["doriwwer","à ce sujet"]]},
+    {"id":"reunion-phrases.ech-sinn-averstanen","fr":"Je suis d'accord","lb":"Ech sinn averstanen","parts":[["Ech","je"],["sinn","suis"],["averstanen","d'accord"]],"note":"« sinn » garde son n devant une voyelle (règle du n)."},
+    {"id":"reunion-phrases.dat-ass-eng-gutt-iddi","fr":"C'est une bonne idée","lb":"Dat ass eng gutt Iddi","parts":[["Dat","cela"],["ass","est"],["eng","une"],["gutt","bonne"],["Iddi","idée"]],"note":"Après « eng » (féminin), l'adjectif « gutt » ne prend pas de terminaison."},
+    {"id":"reunion-phrases.mir-hunn-e-problem","fr":"Nous avons un problème","lb":"Mir hunn e Problem","parts":[["Mir","nous"],["hunn","avons"],["e","un"],["Problem","problème"]]},
+    {"id":"reunion-phrases.mir-brauchen-mei-zait","fr":"Nous avons besoin de plus de temps","lb":"Mir brauchen méi Zäit","parts":[["Mir","nous"],["brauchen","avons besoin de"],["méi","plus de"],["Zäit","temps"]]},
+    {"id":"reunion-phrases.ech-hu-keng-zait","fr":"Je n'ai pas le temps","lb":"Ech hu keng Zäit","parts":[["Ech","je"],["hu","ai"],["keng","aucune"],["Zäit","temps"]],"note":"« keng » est la négation de « eng » devant un nom féminin : « keng Zäit » (pas de temps)."},
+    {"id":"reunion-phrases.ech-muss-dat-bis-muer-maachen","fr":"Je dois faire cela d'ici demain","lb":"Ech muss dat bis muer maachen","parts":[["Ech","je"],["muss","dois"],["dat","cela"],["bis muer","d'ici demain"],["maachen","faire"]],"note":"Avec « muss » (devoir), l'infinitif « maachen » se place à la fin."},
+    {"id":"reunion-phrases.entschellegt-ech-sinn-ze-speit","fr":"Excusez-moi, je suis en retard","lb":"Entschëllegt, ech sinn ze spéit","parts":[["Entschëllegt","excusez-moi"],["ech","je"],["sinn","suis"],["ze spéit","trop tard"]],"note":"« sinn » garde son n devant « z » (règle du n)."},
+    {"id":"reunion-phrases.maache-mir-eng-paus","fr":"Faisons une pause ?","lb":"Maache mir eng Paus?","parts":[["Maache","faisons"],["mir","nous"],["eng","une"],["Paus","pause"]],"note":"Pour proposer, on met le verbe en premier. « maachen » perd son n devant « m » (règle du n)."},
+    {"id":"reunion-phrases.merci-a-bis-geschwenn","fr":"Merci et à bientôt","lb":"Merci a bis geschwënn","parts":[["Merci","merci"],["a","et"],["bis geschwënn","à bientôt"]],"note":"« an » (et) devient « a » devant « b » (règle du n)."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "presenter",
+  "title": "Se présenter",
+  "items": [
+    {"id":"presenter.main-numm-ass","fr":"Mon nom est…","lb":"Mäin Numm ass…","parts":[["Mäin","mon"],["Numm","nom"],["ass","est"]],"note":"On ajoute son prénom : « Mäin Numm ass Anna ». On peut aussi dire « Ech heeschen Anna »."},
+    {"id":"presenter.wei-heescht-dir","fr":"Comment vous appelez-vous ?","lb":"Wéi heescht Dir?","parts":[["Wéi","comment"],["heescht","appelez"],["Dir","vous"]],"note":"Forme de politesse. Entre amis, on dit « Wéi heeschs du ? »."},
+    {"id":"presenter.wei-heeschs-du","fr":"Comment t'appelles-tu ?","lb":"Wéi heeschs du?","parts":[["Wéi","comment"],["heeschs","appelles"],["du","tu"]],"note":"Forme familière (tutoiement)."},
+    {"id":"presenter.et-freet-mech","fr":"Enchanté","lb":"Et freet mech","parts":[["Et","cela"],["freet","réjouit"],["mech","moi"]],"note":"Littéralement « cela me réjouit »."},
+    {"id":"presenter.et-freet-mech-iech-kennen-ze-leieren","fr":"Ravi de faire votre connaissance","lb":"Et freet mech, Iech kennen ze léieren","parts":[["Et freet mech","cela me réjouit"],["Iech","vous"],["kennen ze léieren","apprendre à connaître"]],"note":"Littéralement « cela me réjouit d'apprendre à vous connaître »."},
+    {"id":"presenter.ech-sinn-dresseg-joer-al","fr":"J'ai trente ans","lb":"Ech sinn drësseg Joer al","parts":[["Ech","je"],["sinn","suis"],["drësseg","trente"],["Joer","ans"],["al","âgé"]],"note":"Pour l'âge, on dit « je suis trente ans âgé ». « sinn » garde son n devant « d » (règle du n)."},
+    {"id":"presenter.wei-al-sidd-dir","fr":"Quel âge avez-vous ?","lb":"Wéi al sidd Dir?","parts":[["Wéi al","quel âge (comment âgé)"],["sidd","êtes"],["Dir","vous"]]},
+    {"id":"presenter.ech-si-frou","fr":"Je suis content","lb":"Ech si frou","parts":[["Ech","je"],["si","suis"],["frou","content"]],"note":"« si » (et non « sinn ») devant « f » : règle du n."},
+    {"id":"presenter.wou-schafft-dir","fr":"Où travaillez-vous ?","lb":"Wou schafft Dir?","parts":[["Wou","où"],["schafft","travaillez"],["Dir","vous"]]},
+    {"id":"presenter.ech-hunn-zwee-kanner","fr":"J'ai deux enfants","lb":"Ech hunn zwee Kanner","parts":[["Ech","je"],["hunn","ai"],["zwee","deux"],["Kanner","enfants"]],"note":"« Kanner » est le pluriel de « Kand » (enfant)."},
+    {"id":"presenter.hutt-dir-kanner","fr":"Avez-vous des enfants ?","lb":"Hutt Dir Kanner?","parts":[["Hutt","avez"],["Dir","vous"],["Kanner","des enfants"]],"note":"Pour poser la question, on met le verbe en premier."}
+  ]
+}

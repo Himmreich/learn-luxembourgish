@@ -1,0 +1,24 @@
+{
+  "id": "nombres2",
+  "title": "Les nombres de 11 à 100",
+  "items": [
+    {"id":"nombres2.eelef","fr":"Onze","lb":"Eelef","note":"Les nombres 11 et 12 (« eelef », « zwielef ») sont des mots à apprendre. De 13 à 19, on ajoute « -zéng » (dix) : « dräizéng », « véierzéng »…"},
+    {"id":"nombres2.zwielef","fr":"Douze","lb":"Zwielef"},
+    {"id":"nombres2.draizeng","fr":"Treize","lb":"Dräizéng"},
+    {"id":"nombres2.veierzeng","fr":"Quatorze","lb":"Véierzéng"},
+    {"id":"nombres2.fofzeng","fr":"Quinze","lb":"Fofzéng"},
+    {"id":"nombres2.siechzeng","fr":"Seize","lb":"Siechzéng"},
+    {"id":"nombres2.siwwenzeng","fr":"Dix-sept","lb":"Siwwenzéng"},
+    {"id":"nombres2.uechtzeng","fr":"Dix-huit","lb":"Uechtzéng"},
+    {"id":"nombres2.nonzeng","fr":"Dix-neuf","lb":"Nonzéng"},
+    {"id":"nombres2.zwanzeg","fr":"Vingt","lb":"Zwanzeg"},
+    {"id":"nombres2.dresseg","fr":"Trente","lb":"Drësseg"},
+    {"id":"nombres2.veierzeg","fr":"Quarante","lb":"Véierzeg"},
+    {"id":"nombres2.fofzeg","fr":"Cinquante","lb":"Fofzeg"},
+    {"id":"nombres2.siechzeg","fr":"Soixante","lb":"Siechzeg"},
+    {"id":"nombres2.siwwenzeg","fr":"Soixante-dix","lb":"Siwwenzeg","note":"Contrairement au français, le luxembourgeois est régulier : 70 = « siwwenzeg » (sept-dix), 80 = « achtzeg », 90 = « nonzeg »."},
+    {"id":"nombres2.achtzeg","fr":"Quatre-vingts","lb":"Achtzeg"},
+    {"id":"nombres2.nonzeg","fr":"Quatre-vingt-dix","lb":"Nonzeg"},
+    {"id":"nombres2.honnert","fr":"Cent","lb":"Honnert"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "guichet",
+  "title": "Banque : au guichet",
+  "items": [
+    {"id":"guichet.wei-kann-ech-iech-hellefen","fr":"Comment puis-je vous aider ?","lb":"Wéi kann ech Iech hëllefen?","parts":[["Wéi","comment"],["kann","peux"],["ech","je"],["Iech","vous"],["hëllefen","aider"]],"note":"L'infinitif (« hëllefen ») se place à la fin de la phrase."},
+    {"id":"guichet.ech-weilt-e-kont-opmaachen","fr":"Je voudrais ouvrir un compte","lb":"Ech wéilt e Kont opmaachen","parts":[["Ech","je"],["wéilt","voudrais"],["e","un"],["Kont","compte"],["opmaachen","ouvrir"]],"note":"« wéilt » est le conditionnel de wëllen (vouloir). L'infinitif « opmaachen » va à la fin."},
+    {"id":"guichet.ech-weilt-eng-iwwerweisung-maachen","fr":"Je voudrais faire un virement","lb":"Ech wéilt eng Iwwerweisung maachen","parts":[["Ech","je"],["wéilt","voudrais"],["eng","une"],["Iwwerweisung","virement"],["maachen","faire"]],"note":"« Iwwerweisung » est féminin, donc « eng » (et non « e »)."},
+    {"id":"guichet.ech-weilt-geld-ofhiewen","fr":"Je voudrais retirer de l'argent","lb":"Ech wéilt Geld ofhiewen","parts":[["Ech","je"],["wéilt","voudrais"],["Geld","argent"],["ofhiewen","retirer"]]},
+    {"id":"guichet.ar-kaart-ass-gespaart","fr":"Votre carte est bloquée","lb":"Är Kaart ass gespaart","parts":[["Är","votre"],["Kaart","carte"],["ass","est"],["gespaart","bloquée"]]},
+    {"id":"guichet.d-iwwerweisung-ass-gemaach-ginn","fr":"Le virement a été effectué","lb":"D'Iwwerweisung ass gemaach ginn","parts":[["D'Iwwerweisung","le virement"],["ass … ginn","a été (passif)"],["gemaach","fait"]],"note":"Le passif se forme avec « ass » + participe + « ginn » : « ass gemaach ginn » (a été fait)."},
+    {"id":"guichet.ech-hu-mai-passwuert-vergiess","fr":"J'ai oublié mon mot de passe","lb":"Ech hu mäi Passwuert vergiess","parts":[["Ech","je"],["hu","ai"],["mäi","mon"],["Passwuert","mot de passe"],["vergiess","oublié"]]},
+    {"id":"guichet.kennt-dir-hei-ennerschreiwen","fr":"Pouvez-vous signer ici ?","lb":"Kënnt Dir hei ënnerschreiwen?","parts":[["Kënnt","pouvez"],["Dir","vous"],["hei","ici"],["ënnerschreiwen","signer"]]},
+    {"id":"guichet.wei-heich-ass-de-solde","fr":"Quel est le solde ?","lb":"Wéi héich ass de Solde?","parts":[["Wéi héich","à quelle hauteur"],["ass","est"],["de Solde","le solde"]],"note":"Littéralement « à quelle hauteur est le solde ? », c'est-à-dire « quel est le solde ? »."}
+  ]
+}

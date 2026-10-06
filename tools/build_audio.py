@@ -3,13 +3,13 @@
 Associe les mots de l'app Lëtzebuergesch aux entrées du LOD (données CC0)
 et télécharge leurs enregistrements audio.
 
-Les mots sont lus directement dans site/index.html (option --html), ou dans un words.json (option --words).
+Les mots sont lus dans le contenu de l'app (site/content).
 
 Étape 1 (sans rien télécharger, pour vérifier les correspondances) :
-    python3 tools/build_audio.py --xml data/new_lod-art.xml --html site/index.html --out build
+    python3 tools/build_audio.py --xml data/new_lod-art.xml --content site/content --out build
 
 Étape 2 (télécharge les audios) :
-    python3 tools/build_audio.py --xml data/new_lod-art.xml --html site/index.html --out build --download
+    python3 tools/build_audio.py --xml data/new_lod-art.xml --content site/content --out build --download
 
 Résultat dans le dossier out/ :
     report.csv        un mot par ligne : statut, entrée du LOD trouvée, genre, traductions
@@ -29,27 +29,13 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from content_lib import all_items, load_content  # noqa: E402
+
 AUDIO_URL = "https://lod.lu/uploads/AAC/{id}.m4a"
 EXAMPLE_URL = "https://lod.lu/uploads/examples/AAC/{p}/{id}.m4a"
 REGISTERS = {"EGS", "FAM", "GEHUEW", "KANNERSPROOCH", "NEOL", "PEJ", "VEREELZT", "VULG"}
-NOUN_RE = re.compile(r"(Den|De|D')\s?([^\s,?!…]+)")
-
-
-def words_from_html(path):
-    """Lit la liste THEMES (paires [français, luxembourgeois]) directement dans index.html."""
-    src = Path(path).read_text(encoding="utf-8")
-    start = src.index("const THEMES = [")
-    end = src.index("THEMES.forEach", start)
-    pair = r'\["((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"\]'
-    theme, words = None, []
-    for m in re.finditer(r'id:"([^"]+)"|' + pair, src[start:end]):
-        if m.group(1):
-            theme = m.group(1)
-        else:
-            words.append({"theme": theme,
-                          "fr": json.loads('"' + m.group(2) + '"'),
-                          "lb": json.loads('"' + m.group(3) + '"')})
-    return words
+NOUN_RE = re.compile(r"(?:(Den|De)\s+|(D')\s*)([^\s,?!…]+)")
 
 
 def key(text):
@@ -132,8 +118,14 @@ def match_word(word, lemmas, examples):
     lb, fr = word["lb"], word["fr"]
     m = NOUN_RE.fullmatch(lb)
     if m:
-        art, base = m.groups()
-        expected = {"M"} if art in ("De", "Den") else {"F", "N"}
+        art, base = (m.group(1) or m.group(2)), m.group(3)
+        gender = word.get("gender")
+        if gender in ("m", "f", "n"):
+            expected = {gender.upper()}
+        elif gender == "pl":
+            expected = set()
+        else:
+            expected = {"M"} if art in ("De", "Den") else {"F", "N"}
     else:
         art, base, expected = None, lb, set()
 
@@ -185,20 +177,14 @@ def download(url, dest, pause=0.25):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--xml", required=True, help="fichier new_lod-art.xml du LOD")
-    ap.add_argument("--html", help="page de l'app (site/index.html) : les mots y sont lus directement")
-    ap.add_argument("--words", help="ou un fichier words.json")
+    ap.add_argument("--content", required=True, help="dossier du contenu de l'app (site/content)")
     ap.add_argument("--out", default="out", help="dossier de sortie")
     ap.add_argument("--download", action="store_true", help="télécharge réellement les audios")
     args = ap.parse_args()
 
     out = Path(args.out)
     (out / "audio").mkdir(parents=True, exist_ok=True)
-    if args.html:
-        words = words_from_html(args.html)
-    elif args.words:
-        words = json.loads(Path(args.words).read_text(encoding="utf-8"))
-    else:
-        sys.exit("Indiquez --html site/index.html (ou --words words.json)")
+    words = all_items(load_content(args.content))
     print(f"{len(words)} mots lus dans l'app.", flush=True)
 
     print("Lecture du dictionnaire (une minute environ)...", flush=True)

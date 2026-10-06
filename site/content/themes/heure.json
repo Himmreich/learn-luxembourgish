@@ -1,0 +1,17 @@
+{
+  "id": "heure",
+  "title": "L'heure",
+  "items": [
+    {"id":"heure.wei-vill-auer-ass-et","fr":"Quelle heure est-il ?","lb":"Wéi vill Auer ass et?","parts":[["Wéi vill","combien"],["Auer","heure(s)"],["ass","est"],["et","il"]],"note":"Littéralement « combien d'heures est-il ? »."},
+    {"id":"heure.et-ass-eng-auer","fr":"Il est une heure","lb":"Et ass eng Auer","parts":[["Et","il"],["ass","est"],["eng","une"],["Auer","heure(s)"]],"note":"« Auer » est féminin : « eng Auer » (une heure), « zwou Auer » (deux heures)."},
+    {"id":"heure.et-ass-zwou-auer","fr":"Il est deux heures","lb":"Et ass zwou Auer","parts":[["Et","il"],["ass","est"],["zwou","deux"],["Auer","heure(s)"]],"note":"Devant un nom féminin comme « Auer », « deux » devient « zwou » (au lieu de « zwee »)."},
+    {"id":"heure.et-ass-sechs-auer","fr":"Il est six heures","lb":"Et ass sechs Auer","parts":[["Et","il"],["ass","est"],["sechs","six"],["Auer","heure(s)"]]},
+    {"id":"heure.et-ass-aacht-auer","fr":"Il est huit heures","lb":"Et ass aacht Auer","parts":[["Et","il"],["ass","est"],["aacht","huit"],["Auer","heure(s)"]]},
+    {"id":"heure.et-ass-eelef-auer","fr":"Il est onze heures","lb":"Et ass eelef Auer","parts":[["Et","il"],["ass","est"],["eelef","onze"],["Auer","heure(s)"]]},
+    {"id":"heure.et-ass-metteg","fr":"Il est midi","lb":"Et ass Mëtteg","parts":[["Et","il"],["ass","est"],["Mëtteg","midi"]]},
+    {"id":"heure.et-ass-metternuecht","fr":"Il est minuit","lb":"Et ass Mëtternuecht","parts":[["Et","il"],["ass","est"],["Mëtternuecht","minuit"]]},
+    {"id":"heure.et-ass-veierel-op-aacht","fr":"Il est huit heures et quart","lb":"Et ass Véierel op aacht","parts":[["Véierel","quart"],["op","après"],["aacht","huit"]],"note":"« Véierel op » = « un quart après » ; « Véierel fir » = « un quart avant »."},
+    {"id":"heure.et-ass-veierel-fir-drai","fr":"Il est trois heures moins le quart","lb":"Et ass Véierel fir dräi","parts":[["Véierel","quart"],["fir","avant"],["dräi","trois"]]},
+    {"id":"heure.et-ass-halwer-drai","fr":"Il est deux heures et demie","lb":"Et ass halwer dräi","parts":[["halwer","demi"],["dräi","trois"]],"note":"Attention, comme en allemand : on compte vers l'heure suivante. « halwer dräi » = « un demi avant trois » = 2 h 30."}
+  ]
+}

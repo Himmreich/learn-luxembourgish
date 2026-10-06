@@ -1,0 +1,18 @@
+{
+  "id": "habiter",
+  "title": "J'habite à…",
+  "items": [
+    {"id":"habiter.wou-wunnt-dir","fr":"Où habitez-vous ?","lb":"Wou wunnt Dir?","parts":[["Wou","où"],["wunnt","habitez"],["Dir","vous"]]},
+    {"id":"habiter.ech-wunnen-zu-letzebuerg","fr":"J'habite à Luxembourg","lb":"Ech wunnen zu Lëtzebuerg","parts":[["Ech","je"],["wunnen","habite"],["zu","à"],["Lëtzebuerg","Luxembourg"]],"note":"On utilise « zu » pour une ville ou un village, et « an » pour un pays."},
+    {"id":"habiter.ech-wunnen-zu-parais","fr":"J'habite à Paris","lb":"Ech wunnen zu Paräis","parts":[["Ech","je"],["wunnen","habite"],["zu","à"],["Paräis","Paris"]]},
+    {"id":"habiter.ech-wunnen-a-frankraich","fr":"J'habite en France","lb":"Ech wunnen a Frankräich","parts":[["Ech","je"],["wunnen","habite"],["a","en"],["Frankräich","France"]],"note":"« an » (en) perd son n devant la plupart des consonnes : « a Frankräich ». Il le garde devant une voyelle ou n, d, t, z, h : « an Däitschland »."},
+    {"id":"habiter.ech-wunnen-an-daitschland","fr":"J'habite en Allemagne","lb":"Ech wunnen an Däitschland","parts":[["Ech","je"],["wunnen","habite"],["an","en"],["Däitschland","Allemagne"]],"note":"« an » garde son n car « Däitschland » commence par d."},
+    {"id":"habiter.ech-wunnen-an-der-belsch","fr":"J'habite en Belgique","lb":"Ech wunnen an der Belsch","parts":[["Ech","je"],["wunnen","habite"],["an der","en (dans la)"],["Belsch","Belgique"]],"note":"« d'Belsch » est féminin : on dit « an der Belsch »."},
+    {"id":"habiter.vu-wou-kommt-dir","fr":"D'où venez-vous ?","lb":"Vu wou kommt Dir?","parts":[["Vu wou","d'où"],["kommt","venez"],["Dir","vous"]]},
+    {"id":"habiter.ech-kommen-aus-frankraich","fr":"Je viens de France","lb":"Ech kommen aus Frankräich","parts":[["Ech","je"],["kommen","viens"],["aus","de"],["Frankräich","France"]],"note":"On dit « aus » pour le pays d'origine."},
+    {"id":"habiter.ech-kommen-aus-der-belsch","fr":"Je viens de Belgique","lb":"Ech kommen aus der Belsch","parts":[["Ech","je"],["kommen","viens"],["aus der","de la"],["Belsch","Belgique"]]},
+    {"id":"habiter.ech-wunnen-an-engem-appartement","fr":"J'habite dans un appartement","lb":"Ech wunnen an engem Appartement","parts":[["Ech","je"],["wunnen","habite"],["an","dans"],["engem","un"],["Appartement","appartement"]],"note":"Pour dire où l'on est, on utilise le datif : « engem » (masculin et neutre), « enger » (féminin)."},
+    {"id":"habiter.ech-wunnen-an-engem-haus","fr":"J'habite dans une maison","lb":"Ech wunnen an engem Haus","parts":[["Ech","je"],["wunnen","habite"],["an","dans"],["engem","un"],["Haus","maison"]]},
+    {"id":"habiter.ech-schaffen-zu-letzebuerg","fr":"Je travaille à Luxembourg","lb":"Ech schaffen zu Lëtzebuerg","parts":[["Ech","je"],["schaffen","travaille"],["zu","à"],["Lëtzebuerg","Luxembourg"]]}
+  ]
+}

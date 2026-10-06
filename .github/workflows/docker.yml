@@ -1,17 +1,30 @@
-# Facultatif : construit l'image à chaque push et la publie sur ghcr.io,
-# pour la déployer avec « docker compose pull » sans reconstruire sur le serveur.
+# À chaque push sur main : contrôle du contenu + tests, puis construction de l'image et publication sur ghcr.io
+# (facultatif : on peut aussi construire l'image directement sur le serveur avec « docker compose up -d --build »).
 name: docker
 
 on:
   push:
     branches: [main]
+  pull_request:
 
 permissions:
   contents: read
   packages: write
 
 jobs:
-  build:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm test
+
+  publish:
+    needs: test
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

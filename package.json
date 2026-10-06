@@ -1,0 +1,11 @@
+{
+  "name": "learn-luxembourgish",
+  "private": true,
+  "description": "Application d'apprentissage du luxembourgeois",
+  "scripts": {
+    "test": "python3 tools/check_content.py site/content && node tests/smoke.js"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0"
+  }
+}

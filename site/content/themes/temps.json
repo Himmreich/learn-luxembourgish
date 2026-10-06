@@ -1,0 +1,15 @@
+{
+  "id": "temps",
+  "title": "Le temps qui passe",
+  "items": [
+    {"id":"temps.haut","fr":"Aujourd'hui","lb":"Haut"},
+    {"id":"temps.muer","fr":"Demain","lb":"Muer"},
+    {"id":"temps.geschter","fr":"Hier","lb":"Gëschter"},
+    {"id":"temps.elo","fr":"Maintenant","lb":"Elo"},
+    {"id":"temps.moies","fr":"Le matin","lb":"Moies"},
+    {"id":"temps.nomettes","fr":"L'après-midi","lb":"Nomëttes"},
+    {"id":"temps.de-weekend","fr":"Le week-end","lb":"De Weekend","gender":"m"},
+    {"id":"temps.d-joer","fr":"L'année","lb":"D'Joer","gender":"n"},
+    {"id":"temps.d-woch","fr":"La semaine","lb":"D'Woch"}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "id": "premiers",
+      "title": "Premiers mots",
+      "subtitle": "",
+      "themes": [
+        "salut",
+        "politesse",
+        "reponses",
+        "phrases"
+      ]
+    },
+    {
+      "id": "soi",
+      "title": "Parler de soi",
+      "subtitle": "",
+      "themes": [
+        "presenter",
+        "habiter",
+        "langues",
+        "famille"
+      ]
+    },
+    {
+      "id": "quotidien",
+      "title": "Vie quotidienne",
+      "subtitle": "",
+      "themes": [
+        "nombres",
+        "nombres2",
+        "couleurs",
+        "manger",
+        "cafe",
+        "transport"
+      ]
+    },
+    {
+      "id": "temps",
+      "title": "Le temps",
+      "subtitle": "",
+      "themes": [
+        "jours",
+        "mois",
+        "heure",
+        "temps"
+      ]
+    },
+    {
+      "id": "pro",
+      "title": "Au travail",
+      "subtitle": "Banque, informatique et réunions.",
+      "themes": [
+        "banque",
+        "guichet",
+        "info",
+        "support",
+        "reunion",
+        "reunion-phrases"
+      ]
+    }
+  ],
+  "grammar": [
+    "articles"
+  ]
+}

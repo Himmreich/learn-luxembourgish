@@ -1,0 +1,22 @@
+{
+  "id": "langues",
+  "title": "Les langues que je parle",
+  "items": [
+    {"id":"langues.letzebuergesch","fr":"Le luxembourgeois","lb":"Lëtzebuergesch"},
+    {"id":"langues.franseisch","fr":"Le français","lb":"Franséisch"},
+    {"id":"langues.daitsch","fr":"L'allemand","lb":"Däitsch"},
+    {"id":"langues.englesch","fr":"L'anglais","lb":"Englesch"},
+    {"id":"langues.portugisesch","fr":"Le portugais","lb":"Portugisesch"},
+    {"id":"langues.ech-schwatzen-letzebuergesch","fr":"Je parle luxembourgeois","lb":"Ech schwätzen Lëtzebuergesch","parts":[["Ech","je"],["schwätzen","parle"],["Lëtzebuergesch","luxembourgeois"]],"note":"Pas d'article devant le nom de la langue. Avec « ech », le verbe garde sa forme en « -en »."},
+    {"id":"langues.ech-schwatzen-franseisch","fr":"Je parle français","lb":"Ech schwätzen Franséisch","parts":[["Ech","je"],["schwätzen","parle"],["Franséisch","français"]]},
+    {"id":"langues.ech-schwatzen-englesch","fr":"Je parle anglais","lb":"Ech schwätzen Englesch","parts":[["Ech","je"],["schwätzen","parle"],["Englesch","anglais"]]},
+    {"id":"langues.ech-schwatzen-e-bessen-daitsch","fr":"Je parle un peu allemand","lb":"Ech schwätzen e bëssen Däitsch","parts":[["Ech","je"],["schwätzen","parle"],["e bëssen","un peu"],["Däitsch","allemand"]]},
+    {"id":"langues.ech-schwatzen-net-gutt-letzebuergesch","fr":"Je ne parle pas bien luxembourgeois","lb":"Ech schwätzen net gutt Lëtzebuergesch","parts":[["Ech","je"],["schwätzen","parle"],["net","pas"],["gutt","bien"],["Lëtzebuergesch","luxembourgeois"]]},
+    {"id":"langues.ech-verstinn-letzebuergesch","fr":"Je comprends le luxembourgeois","lb":"Ech verstinn Lëtzebuergesch","parts":[["Ech","je"],["verstinn","comprends"],["Lëtzebuergesch","luxembourgeois"]]},
+    {"id":"langues.ech-leieren-letzebuergesch","fr":"J'apprends le luxembourgeois","lb":"Ech léieren Lëtzebuergesch","parts":[["Ech","je"],["léieren","apprends"],["Lëtzebuergesch","luxembourgeois"]]},
+    {"id":"langues.wei-eng-sprooch-schwatzt-dir","fr":"Quelle langue parlez-vous ?","lb":"Wéi eng Sprooch schwätzt Dir?","parts":[["Wéi eng","quelle"],["Sprooch","langue"],["schwätzt","parlez"],["Dir","vous"]],"note":"« Sprooch » est féminin, donc « wéi eng »."},
+    {"id":"langues.meng-mammesprooch-ass-franseisch","fr":"Ma langue maternelle est le français","lb":"Meng Mammesprooch ass Franséisch","parts":[["Meng","ma"],["Mammesprooch","langue maternelle"],["ass","est"],["Franséisch","français"]]},
+    {"id":"langues.kennt-dir-mei-lues-schwatzen","fr":"Pouvez-vous parler plus lentement ?","lb":"Kënnt Dir méi lues schwätzen?","parts":[["Kënnt","pouvez"],["Dir","vous"],["méi","plus"],["lues","lentement"],["schwätzen","parler"]]},
+    {"id":"langues.kennt-dir-dat-widderhuelen","fr":"Pouvez-vous répéter cela ?","lb":"Kënnt Dir dat widderhuelen?","parts":[["Kënnt","pouvez"],["Dir","vous"],["dat","cela"],["widderhuelen","répéter"]]}
+  ]
+}

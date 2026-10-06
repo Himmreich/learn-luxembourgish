@@ -1,0 +1,16 @@
+{
+  "id": "famille",
+  "title": "Famille et amis",
+  "items": [
+    {"id":"famille.d-mamm","fr":"La mère","lb":"D'Mamm","gender":"f"},
+    {"id":"famille.de-papp","fr":"Le père","lb":"De Papp","gender":"m"},
+    {"id":"famille.de-jong","fr":"Le fils","lb":"De Jong","gender":"m"},
+    {"id":"famille.d-duechter","fr":"La fille","lb":"D'Duechter","gender":"f"},
+    {"id":"famille.de-brudder","fr":"Le frère","lb":"De Brudder","gender":"m"},
+    {"id":"famille.d-schwester","fr":"La sœur","lb":"D'Schwëster","gender":"f"},
+    {"id":"famille.de-frend","fr":"L'ami","lb":"De Frënd","gender":"m"},
+    {"id":"famille.d-kand","fr":"L'enfant","lb":"D'Kand","gender":"n"},
+    {"id":"famille.d-bomi","fr":"La grand-mère","lb":"D'Bomi","gender":"f"},
+    {"id":"famille.de-bopa","fr":"Le grand-père","lb":"De Bopa","gender":"m"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mois",
+  "title": "Les mois",
+  "items": [
+    {"id":"mois.januar","fr":"Janvier","lb":"Januar"},
+    {"id":"mois.februar","fr":"Février","lb":"Februar"},
+    {"id":"mois.maerz","fr":"Mars","lb":"Mäerz"},
+    {"id":"mois.abrell","fr":"Avril","lb":"Abrëll"},
+    {"id":"mois.mee","fr":"Mai","lb":"Mee"},
+    {"id":"mois.juni","fr":"Juin","lb":"Juni"},
+    {"id":"mois.juli","fr":"Juillet","lb":"Juli"},
+    {"id":"mois.august","fr":"Août","lb":"August"},
+    {"id":"mois.september","fr":"Septembre","lb":"September"},
+    {"id":"mois.oktober","fr":"Octobre","lb":"Oktober"},
+    {"id":"mois.november","fr":"Novembre","lb":"November"},
+    {"id":"mois.dezember","fr":"Décembre","lb":"Dezember"}
+  ]
+}

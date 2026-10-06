@@ -1,0 +1,25 @@
+{
+  "id": "articles",
+  "title": "de, den, d' : pourquoi ?",
+  "subtitle": "Les articles et la règle du n",
+  "blocks": [
+    {"p": "Comme en allemand, chaque nom luxembourgeois a un **genre** : masculin, féminin ou neutre. L'article « le / la / les » dépend de ce genre."},
+    {"table": {"head": ["Genre", "Article", "Exemples"], "accent": 1, "rows": [
+      ["Masculin", "de / den", "de Wäin, den Zuch"],
+      ["Féminin", "d'", "d'Bank"],
+      ["Neutre", "d'", "d'Brout"],
+      ["Pluriel", "d'", "d'Zënsen"]
+    ]}},
+    {"h": "Pourquoi « d' » partout ?"},
+    {"p": "Le féminin, le neutre et le pluriel ont le même article. En voyant « d'Brout », on ne peut donc pas deviner si le mot est féminin, neutre ou pluriel. Il faut **apprendre le mot avec son article**, et c'est pour cela que l'app l'affiche toujours."},
+    {"h": "De ou den ? La règle du « n »"},
+    {"p": "Pour le masculin, le « n » de **den** n'est gardé que devant une **voyelle** ou devant **n, d, t, z, h**. Devant toute autre lettre, on dit **de**."},
+    {"examples": [["den Auto", "voyelle"], ["den Zuch", "z"], ["de Wäin", "w"], ["de Kaffi", "k"]]},
+    {"p": "Cette règle ne concerne pas que les articles : elle s'applique aussi à la fin des verbes. « Je suis » se dit **ech sinn** devant une voyelle ou n, d, t, z, h ([[Ech sinn daf]]), et **ech si** devant les autres lettres ([[Ech si krank]], [[Ech si midd]]). Elle touche aussi les adjectifs : [[Gudde Moien]] mais [[Gudden Owend]]. Les deux formes sont donc justes : c'est la lettre suivante qui décide. À l'écrit, vous pouvez taper l'une ou l'autre dans l'app."},
+    {"h": "Quand on insiste"},
+    {"p": "Pour dire « *ce* train-là », on utilise des formes plus fortes : **deen** (masculin), **déi** (féminin et pluriel), **dat** (neutre)."},
+    {"h": "Après une préposition"},
+    {"p": "Avec certaines prépositions (mat = avec, bei = chez…), la forme change : **dem** pour le masculin et le neutre, **der** pour le féminin. Exemple : [[mat der Mamm]] (avec la maman). Vous l'avez déjà vu dans « Et gëtt e Problem mat **der** Applikatioun »."},
+    {"small": "Ceci est un résumé. Pour le genre exact d'un mot, vérifiez sur [lod.lu](https://lod.lu)."}
+  ]
+}

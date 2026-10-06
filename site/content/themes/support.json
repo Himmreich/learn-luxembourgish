@@ -1,0 +1,16 @@
+{
+  "id": "support",
+  "title": "Support : un problème",
+  "items": [
+    {"id":"support.et-gett-e-problem-mat-der-applikatioun","fr":"Il y a un problème avec l'application","lb":"Et gëtt e Problem mat der Applikatioun","parts":[["Et gëtt","il y a"],["e","un"],["Problem","problème"],["mat","avec"],["der Applikatioun","l'application"]],"note":"Après « mat », « d'Applikatioun » devient « der Applikatioun » (datif féminin)."},
+    {"id":"support.de-client-kann-sech-net-umellen","fr":"Le client ne peut pas se connecter","lb":"De Client kann sech net umellen","parts":[["De Client","le client"],["kann","peut"],["sech","se"],["net","ne … pas"],["umellen","connecter"]],"note":"« sech umellen » = se connecter. L'infinitif est à la fin."},
+    {"id":"support.d-passwuert-ass-falsch","fr":"Le mot de passe est faux","lb":"D'Passwuert ass falsch","parts":[["D'Passwuert","le mot de passe"],["ass","est"],["falsch","faux"]]},
+    {"id":"support.et-funktioneiert-net","fr":"Ça ne fonctionne pas","lb":"Et funktionéiert net","parts":[["Et","ça"],["funktionéiert","fonctionne"],["net","pas"]]},
+    {"id":"support.wei-eng-feelermeldung-gesitt-dir","fr":"Quelle erreur voyez-vous ?","lb":"Wéi eng Feelermeldung gesitt Dir?","parts":[["Wéi eng","quelle"],["Feelermeldung","message d'erreur"],["gesitt","voyez"],["Dir","vous"]],"note":"« Feelermeldung » est féminin, donc « wéi eng »."},
+    {"id":"support.kennt-dir-d-applikatioun-nei-starten","fr":"Pouvez-vous redémarrer l'application ?","lb":"Kënnt Dir d'Applikatioun nei starten?","parts":[["Kënnt","pouvez"],["Dir","vous"],["d'Applikatioun","l'application"],["nei starten","redémarrer"]]},
+    {"id":"support.probeiert-et-nach-eng-keier-wannechgelift","fr":"Réessayez, s'il vous plaît","lb":"Probéiert et nach eng Kéier, wannechgelift","parts":[["Probéiert","essayez"],["et","cela"],["nach eng Kéier","encore une fois"],["wannechgelift","s'il vous plaît"]]},
+    {"id":"support.ech-kucken-dat-elo-no","fr":"Je regarde ça maintenant","lb":"Ech kucken dat elo no","parts":[["Ech","je"],["kucken … no","regarde (nokucken)"],["dat","cela"],["elo","maintenant"]],"note":"« nokucken » est un verbe à particule séparable : « no » passe à la fin de la phrase."},
+    {"id":"support.ech-schecken-iech-eng-e-mail","fr":"Je vous envoie un courriel","lb":"Ech schécken Iech eng E-Mail","parts":[["Ech","je"],["schécken","envoie"],["Iech","à vous"],["eng E-Mail","un courriel"]]},
+    {"id":"support.de-problem-ass-geleist","fr":"Le problème est résolu","lb":"De Problem ass geléist","parts":[["De Problem","le problème"],["ass","est"],["geléist","résolu"]]}
+  ]
+}

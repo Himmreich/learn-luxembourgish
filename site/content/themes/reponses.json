@@ -1,0 +1,17 @@
+{
+  "id": "reponses",
+  "title": "Comment ça va ? Les réponses",
+  "items": [
+    {"id":"reponses.ganz-gutt","fr":"Très bien","lb":"Ganz gutt","parts":[["Ganz","très"],["gutt","bien"]]},
+    {"id":"reponses.gutt-merci","fr":"Bien, merci","lb":"Gutt, merci"},
+    {"id":"reponses.sou-lala","fr":"Comme ci, comme ça","lb":"Sou lala"},
+    {"id":"reponses.net-schlecht","fr":"Pas mal","lb":"Net schlecht","parts":[["Net","pas"],["schlecht","mal"]]},
+    {"id":"reponses.net-esou-gutt","fr":"Pas très bien","lb":"Net esou gutt","parts":[["Net","pas"],["esou","si"],["gutt","bien"]]},
+    {"id":"reponses.et-geet-mer-net-gutt","fr":"Ça ne va pas bien","lb":"Et geet mer net gutt","parts":[["Et","ça"],["geet","va"],["mer","à moi"],["net","pas"],["gutt","bien"]],"note":"« mer » est la forme courte de « mir » (à moi). « Et geet mer gutt » = « ça va bien pour moi »."},
+    {"id":"reponses.et-geet-mer-schlecht","fr":"Ça va mal","lb":"Et geet mer schlecht","parts":[["Et","ça"],["geet","va"],["mer","à moi"],["schlecht","mal"]]},
+    {"id":"reponses.ech-si-krank","fr":"Je suis malade","lb":"Ech si krank","parts":[["Ech","je"],["si","suis"],["krank","malade"]],"note":"« si » est « sinn » (être) avec la règle du n : le « n » tombe devant k, m, f… Devant une voyelle ou n, d, t, z, h, on garde « sinn » (Ech sinn daf)."},
+    {"id":"reponses.an-iech","fr":"Et vous ?","lb":"An Iech?","parts":[["An","et"],["Iech","vous"]],"note":"Pour renvoyer la question : « Gutt, an Iech ? » (bien, et vous ?). « Iech » est la forme de politesse."},
+    {"id":"reponses.wei-geet-et-iech","fr":"Comment allez-vous ?","lb":"Wéi geet et Iech?","parts":[["Wéi","comment"],["geet","va"],["et","ça"],["Iech","(à) vous"]],"note":"C'est la forme de politesse. Avec un ami, on dit simplement « Wéi geet et ? »."},
+    {"id":"reponses.alles-gutt","fr":"Tout va bien ?","lb":"Alles gutt?","parts":[["Alles","tout"],["gutt","bien"]]}
+  ]
+}

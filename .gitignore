@@ -1,5 +1,12 @@
 # Données du LOD (100 Mo) et fichiers générés
 data/
 build/
+dist/
+node_modules/
 *.zip
 .env
+site/content/all.json
+site/audio-map.json
+site/audio/*.m4a
+__pycache__/
+.idea/

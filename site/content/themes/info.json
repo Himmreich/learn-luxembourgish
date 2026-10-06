@@ -1,0 +1,20 @@
+{
+  "id": "info",
+  "title": "Informatique : vocabulaire",
+  "items": [
+    {"id":"info.de-computer","fr":"L'ordinateur","lb":"De Computer","gender":"m"},
+    {"id":"info.d-applikatioun","fr":"L'application","lb":"D'Applikatioun","gender":"f"},
+    {"id":"info.d-passwuert","fr":"Le mot de passe","lb":"D'Passwuert","gender":"n"},
+    {"id":"info.de-problem","fr":"Le problème","lb":"De Problem","gender":"m"},
+    {"id":"info.de-feeler","fr":"L'erreur","lb":"De Feeler","gender":"m"},
+    {"id":"info.de-server","fr":"Le serveur","lb":"De Server"},
+    {"id":"info.de-fichier","fr":"Le fichier","lb":"De Fichier"},
+    {"id":"info.d-netzwierk","fr":"Le réseau","lb":"D'Netzwierk"},
+    {"id":"info.d-e-mail","fr":"Le courriel","lb":"D'E-Mail","gender":"f"},
+    {"id":"info.d-websait","fr":"Le site web","lb":"D'Websäit","gender":"f"},
+    {"id":"info.klicken","fr":"Cliquer","lb":"Klicken"},
+    {"id":"info.eroflueden","fr":"Télécharger","lb":"Eroflueden"},
+    {"id":"info.aktualiseieren","fr":"Mettre à jour","lb":"Aktualiséieren"},
+    {"id":"info.nei-starten","fr":"Redémarrer","lb":"Nei starten"}
+  ]
+}

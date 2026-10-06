@@ -1,0 +1,18 @@
+{
+  "id": "salut",
+  "title": "Salutations",
+  "items": [
+    {"id":"salut.moien","fr":"Bonjour","lb":"Moien"},
+    {"id":"salut.gudden-owend","fr":"Bonsoir","lb":"Gudden Owend","parts":[["Gudden","bon"],["Owend","soir"]],"note":"« Owend » est masculin, d'où « Gudden ». Pour « nuit » (féminin), on dit « Gutt Nuecht »."},
+    {"id":"salut.gutt-nuecht","fr":"Bonne nuit","lb":"Gutt Nuecht","parts":[["Gutt","bonne"],["Nuecht","nuit"]],"note":"« Nuecht » est féminin : l'adjectif reste « Gutt », sans terminaison."},
+    {"id":"salut.addi","fr":"Au revoir","lb":"Äddi"},
+    {"id":"salut.merci","fr":"Merci","lb":"Merci"},
+    {"id":"salut.wannechgelift","fr":"S'il vous plaît","lb":"Wannechgelift"},
+    {"id":"salut.jo","fr":"Oui","lb":"Jo"},
+    {"id":"salut.neen","fr":"Non","lb":"Neen"},
+    {"id":"salut.wei-geet-et","fr":"Comment ça va ?","lb":"Wéi geet et?","parts":[["Wéi","comment"],["geet","va (de goen, aller)"],["et","ça"]]},
+    {"id":"salut.et-geet-gutt","fr":"Ça va bien","lb":"Et geet gutt","parts":[["Et","ça"],["geet","va"],["gutt","bien"]]},
+    {"id":"salut.entschellegt","fr":"Excusez-moi","lb":"Entschëllegt"},
+    {"id":"salut.een-scheinen-dag","fr":"Bonne journée","lb":"Een schéinen Dag","parts":[["Een","un"],["schéinen","beau"],["Dag","jour"]],"note":"L'adjectif prend ici la terminaison « -en » parce que « Dag » est masculin."}
+  ]
+}

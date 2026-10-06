@@ -1,0 +1,16 @@
+{
+  "id": "nombres",
+  "title": "Les nombres",
+  "items": [
+    {"id":"nombres.eent","fr":"Un (pour compter)","lb":"Eent"},
+    {"id":"nombres.zwee","fr":"Deux","lb":"Zwee"},
+    {"id":"nombres.drai","fr":"Trois","lb":"Dräi"},
+    {"id":"nombres.veier","fr":"Quatre","lb":"Véier"},
+    {"id":"nombres.fennef","fr":"Cinq","lb":"Fënnef"},
+    {"id":"nombres.sechs","fr":"Six","lb":"Sechs"},
+    {"id":"nombres.siwen","fr":"Sept","lb":"Siwen"},
+    {"id":"nombres.aacht","fr":"Huit","lb":"Aacht"},
+    {"id":"nombres.neng","fr":"Neuf","lb":"Néng"},
+    {"id":"nombres.zeng","fr":"Dix","lb":"Zéng"}
+  ]
+}

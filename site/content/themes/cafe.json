@@ -1,0 +1,23 @@
+{
+  "id": "cafe",
+  "title": "Au café et au restaurant",
+  "items": [
+    {"id":"cafe.ech-well-e-kaffi","fr":"Je veux un café","lb":"Ech wëll e Kaffi","parts":[["Ech","je"],["wëll","veux"],["e","un"],["Kaffi","café"]],"note":"« wëll » vient de « wëllen » (vouloir). C'est direct : pour commander poliment, on préfère « Ech hätt gär… »."},
+    {"id":"cafe.ech-well-e-kaffi-huelen","fr":"Je veux prendre un café","lb":"Ech wëll e Kaffi huelen","parts":[["Ech","je"],["wëll","veux"],["e","un"],["Kaffi","café"],["huelen","prendre"]],"note":"L'infinitif « huelen » (prendre) se place à la fin de la phrase."},
+    {"id":"cafe.ech-huelen-e-kaffi","fr":"Je prends un café","lb":"Ech huelen e Kaffi","parts":[["Ech","je"],["huelen","prends"],["e","un"],["Kaffi","café"]],"note":"« huelen » (prendre) sert à dire ce qu'on commande."},
+    {"id":"cafe.hels-du-e-kaffi","fr":"Est-ce que tu prends un café ?","lb":"Hëls du e Kaffi?","parts":[["Hëls","prends"],["du","tu"],["e","un"],["Kaffi","café"]],"note":"Avec « du », « huelen » devient « hëls ». La question s'obtient en mettant le verbe en premier, sans « est-ce que »."},
+    {"id":"cafe.huelt-dir-e-kaffi","fr":"Est-ce que vous prenez un café ?","lb":"Huelt Dir e Kaffi?","parts":[["Huelt","prenez"],["Dir","vous"],["e","un"],["Kaffi","café"]],"note":"Forme de politesse. Avec « Dir », le verbe prend la terminaison « -t »."},
+    {"id":"cafe.wells-du-e-kaffi","fr":"Tu veux un café ?","lb":"Wëlls du e Kaffi?","parts":[["Wëlls","veux"],["du","tu"],["e","un"],["Kaffi","café"]]},
+    {"id":"cafe.wellt-dir-e-kaffi","fr":"Voulez-vous un café ?","lb":"Wëllt Dir e Kaffi?","parts":[["Wëllt","voulez"],["Dir","vous"],["e","un"],["Kaffi","café"]]},
+    {"id":"cafe.jo-garen","fr":"Oui, volontiers","lb":"Jo, gären","parts":[["Jo","oui"],["gären","volontiers"]]},
+    {"id":"cafe.neen-merci","fr":"Non, merci","lb":"Neen, merci","parts":[["Neen","non"],["merci","merci"]]},
+    {"id":"cafe.wat-wellt-dir-drenken","fr":"Que voulez-vous boire ?","lb":"Wat wëllt Dir drénken?","parts":[["Wat","quoi"],["wëllt","voulez"],["Dir","vous"],["drénken","boire"]],"note":"L'infinitif « drénken » est à la fin de la phrase."},
+    {"id":"cafe.mat-oder-ouni-zocker","fr":"Avec ou sans sucre ?","lb":"Mat oder ouni Zocker?","parts":[["Mat","avec"],["oder","ou"],["ouni","sans"],["Zocker","sucre"]]},
+    {"id":"cafe.mat-mellech","fr":"Avec du lait","lb":"Mat Mëllech","parts":[["Mat","avec"],["Mëllech","lait"]]},
+    {"id":"cafe.ech-hatt-gar-eng-beier","fr":"Je voudrais une bière","lb":"Ech hätt gär eng Béier","parts":[["Ech","je"],["hätt gär","voudrais (aimerais)"],["eng","une"],["Béier","bière"]],"note":"« Béier » est féminin : « eng Béier » (et non « e Béier »)."},
+    {"id":"cafe.ech-hu-kaffi-gar","fr":"J'aime le café","lb":"Ech hu Kaffi gär","parts":[["Ech","je"],["hu","ai"],["Kaffi","café"],["gär","volontiers"]],"note":"« hunn … gär » (avoir volontiers) veut dire aimer. « hu » (et non « hunn ») devant « K » : règle du n."},
+    {"id":"cafe.ech-hu-kaffi-net-gar","fr":"Je n'aime pas le café","lb":"Ech hu Kaffi net gär","parts":[["Ech","je"],["hu","ai"],["Kaffi","café"],["net","pas"],["gär","volontiers"]],"note":"« net » se place avant « gär », qui reste à la fin."},
+    {"id":"cafe.ech-iessen-brout","fr":"Je mange du pain","lb":"Ech iessen Brout","parts":[["Ech","je"],["iessen","mange"],["Brout","pain"]]},
+    {"id":"cafe.ech-drenken-waasser","fr":"Je bois de l'eau","lb":"Ech drénken Waasser","parts":[["Ech","je"],["drénken","bois"],["Waasser","eau"]]}
+  ]
+}
