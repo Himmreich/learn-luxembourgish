@@ -1,0 +1,16 @@
+{
+  "id": "rendez-vous",
+  "title": "Rendez-vous",
+  "items": [
+    {"id":"rendez-vous.de-rendez-vous","fr":"Le rendez-vous","lb":"De Rendez-vous","gender":"m"},
+    {"id":"rendez-vous.d-agenda","fr":"L'agenda","lb":"D'Agenda"},
+    {"id":"rendez-vous.d-verspeidung","fr":"Le retard","lb":"D'Verspéidung","gender":"f"},
+    {"id":"rendez-vous.ech-hunn-e-rendez-vous-beim-dokter","fr":"J'ai rendez-vous chez le médecin","lb":"Ech hunn e Rendez-vous beim Dokter","parts":[["Ech","je"],["hunn","ai"],["e Rendez-vous","un rendez-vous"],["beim Dokter","chez le médecin"]],"note":"« beim » = « bei » + « dem » : « chez le ». On garde « hunn » devant la voyelle de « e » (règle du n)."},
+    {"id":"rendez-vous.ech-hunn-e-rendez-vous-beim-zanndokter","fr":"J'ai rendez-vous chez le dentiste","lb":"Ech hunn e Rendez-vous beim Zänndokter","parts":[["Ech","je"],["hunn","ai"],["e Rendez-vous","un rendez-vous"],["beim Zänndokter","chez le dentiste"]]},
+    {"id":"rendez-vous.mir-hunn-e-rendez-vous-iwwer-telefon-ausgemaach","fr":"Nous avons pris rendez-vous par téléphone","lb":"Mir hunn e Rendez-vous iwwer Telefon ausgemaach","parts":[["Mir","nous"],["hunn","avons"],["e Rendez-vous","un rendez-vous"],["iwwer Telefon","par téléphone"],["ausgemaach","fixé, convenu"]],"note":"« e Rendez-vous ausmaachen » : fixer un rendez-vous. Au passé composé, le participe « ausgemaach » part à la fin."},
+    {"id":"rendez-vous.mir-gesinn-eis-e-meindeg","fr":"On se voit lundi","lb":"Mir gesinn eis e Méindeg","parts":[["Mir","nous"],["gesinn","voyons"],["eis","nous"],["e Méindeg","lundi"]],"note":"Pour un jour de la semaine, on dit « en » + le jour, avec la règle du n : « en Dënschdeg », « en Donneschdeg », mais « e Méindeg », « e Freideg »."},
+    {"id":"rendez-vous.passt-et-iech","fr":"Ça vous convient ?","lb":"Passt et Iech?","parts":[["Passt","convient"],["et","cela"],["Iech","à vous"]],"note":"« Iech » est la forme de politesse (vous)."},
+    {"id":"rendez-vous.um-wei-vill-auer","fr":"À quelle heure ?","lb":"Um wéi vill Auer?","parts":[["Um","à"],["wéi vill Auer","quelle heure"]]},
+    {"id":"rendez-vous.mai-rendez-vous-gouf-ofgesot","fr":"Mon rendez-vous a été annulé","lb":"Mäi Rendez-vous gouf ofgesot","parts":[["Mäi Rendez-vous","mon rendez-vous"],["gouf","a été"],["ofgesot","annulé"]],"note":"« ofsoen » : annuler. « gouf » + participe forme le passif (« a été… »)."}
+  ]
+}

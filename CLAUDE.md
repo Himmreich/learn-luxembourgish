@@ -37,6 +37,9 @@ Avant de proposer un commit : `npm test` doit passer.
 Construits par analogie, non confirmés dans une source : `Wéi al sidd Dir?`, `Hutt Dir Kanner?`, `Wou schafft Dir?`,
 `Huelt Dir e Kaffi?`, `Wat wëllt Dir drénken?`, `Wéini ass déi nächst Reunioun?`, `Wat denkt Dir doriwwer?`,
 `Kënnt Dir dat erklären?`, `Maache mir eng Paus?`, `Véierel` (écrit aussi `Véirel`), `Moies`, `Nomëttes`, `Haut`, `Muer`.
+Raccourcis ou construits à partir d'exemples du LOD : `Passt et Iech?`, `Mäi Rendez-vous gouf ofgesot`,
+`Ech hunn e Rendez-vous beim Zänndokter`, `Ech hu Kappwéi`. Fournis par l'utilisateur (orthographe normalisée) :
+`Jo, et geet` (remplace `Sou lala`, peu employé), `Dat ass gutt, esou léiers du och mol eppes!` (nuance de « och mol » à confirmer).
 Les genres `gender` des noms hors liste vérifiée sont volontairement omis (Client, Solde, Montant, Fichier, Netzwierk...).
 
 ## Architecture

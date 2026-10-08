@@ -48,6 +48,15 @@
       ]
     },
     {
+      "id": "sante",
+      "title": "Santé et rendez-vous",
+      "subtitle": "Chez le médecin, le dentiste, et pour prendre rendez-vous.",
+      "themes": [
+        "sante",
+        "rendez-vous"
+      ]
+    },
+    {
       "id": "pro",
       "title": "Au travail",
       "subtitle": "Banque, informatique et réunions.",

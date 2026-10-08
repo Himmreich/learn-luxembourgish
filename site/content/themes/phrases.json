@@ -7,6 +7,11 @@
     {"id":"phrases.ech-weess-et-net","fr":"Je ne sais pas","lb":"Ech weess et net","parts":[["Ech","je"],["weess","sais"],["et","cela"],["net","pas"]]},
     {"id":"phrases.schwatzt-dir-franseisch","fr":"Parlez-vous français ?","lb":"Schwätzt Dir Franséisch?","parts":[["Schwätzt","parlez"],["Dir","vous"],["Franséisch","français"]],"note":"Pour poser une question, on inverse le verbe et le sujet : « Schwätzt Dir… ? » (parlez-vous… ?)."},
     {"id":"phrases.wat-kascht-dat","fr":"Combien ça coûte ?","lb":"Wat kascht dat?","parts":[["Wat","quoi"],["kascht","coûte"],["dat","cela"]]},
-    {"id":"phrases.ech-si-midd","fr":"Je suis fatigué","lb":"Ech si midd","parts":[["Ech","je"],["si","suis"],["midd","fatigué"]],"note":"« si » est « sinn » (être) sans son n, car « midd » commence par m (règle du n)."}
+    {"id":"phrases.ech-si-midd","fr":"Je suis fatigué","lb":"Ech si midd","parts":[["Ech","je"],["si","suis"],["midd","fatigué"]],"note":"« si » est « sinn » (être) sans son n, car « midd » commence par m (règle du n)."},
+    {"id":"phrases.dat-freet-mech","fr":"Ça me fait plaisir !","lb":"Dat freet mech!","parts":[["Dat","cela"],["freet","réjouit"],["mech","me"]],"note":"Du verbe « freeën » : réjouir, faire plaisir."},
+    {"id":"phrases.wat-wells-du","fr":"Que veux-tu ?","lb":"Wat wëlls du?","parts":[["Wat","quoi"],["wëlls","veux"],["du","tu"]],"note":"Du verbe « wëllen » (vouloir). Dans la question, le verbe passe devant le sujet."},
+    {"id":"phrases.firwat-net","fr":"Pourquoi pas ?","lb":"Firwat net?","parts":[["Firwat","pourquoi"],["net","pas"]]},
+    {"id":"phrases.dat-ass-gutt-esou-leiers-du-och-mol-eppes","fr":"C'est bien, comme ça tu apprends quelque chose, toi aussi !","lb":"Dat ass gutt, esou léiers du och mol eppes!","parts":[["Dat ass gutt","c'est bien"],["esou","comme ça"],["léiers","apprends"],["du","tu"],["och mol","aussi, pour une fois"],["eppes","quelque chose"]],"note":"Après « esou » en tête de phrase, le verbe reste en 2e position et le sujet passe derrière : « esou léiers du ». « mol » est la forme courte de « emol », une petite particule qui adoucit la phrase."},
+    {"id":"phrases.merci-fir-haut-mir-gesinn-eis-muer","fr":"Merci pour aujourd'hui, Tom, on se voit demain au bureau","lb":"Merci fir haut, Tom, mir gesinn eis muer um Bureau","parts":[["Merci fir haut","merci pour aujourd'hui"],["Tom","Tom"],["mir gesinn eis","nous nous voyons"],["muer","demain"],["um Bureau","au bureau"]],"note":"« um » = « un » + « dem » (au). On dit aussi « de Büro » pour le bureau."}
   ]
 }

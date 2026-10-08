@@ -4,7 +4,7 @@
   "items": [
     {"id":"reponses.ganz-gutt","fr":"Très bien","lb":"Ganz gutt","parts":[["Ganz","très"],["gutt","bien"]]},
     {"id":"reponses.gutt-merci","fr":"Bien, merci","lb":"Gutt, merci"},
-    {"id":"reponses.sou-lala","fr":"Comme ci, comme ça","lb":"Sou lala"},
+    {"id":"reponses.sou-lala","fr":"Comme ci, comme ça","lb":"Jo, et geet","parts":[["Jo","oui"],["et geet","ça va"]],"note":"C'est la façon naturelle de dire « couci-couça » au Luxembourg. « Sou lala » se comprend, mais s'emploie peu."},
     {"id":"reponses.net-schlecht","fr":"Pas mal","lb":"Net schlecht","parts":[["Net","pas"],["schlecht","mal"]]},
     {"id":"reponses.net-esou-gutt","fr":"Pas très bien","lb":"Net esou gutt","parts":[["Net","pas"],["esou","si"],["gutt","bien"]]},
     {"id":"reponses.et-geet-mer-net-gutt","fr":"Ça ne va pas bien","lb":"Et geet mer net gutt","parts":[["Et","ça"],["geet","va"],["mer","à moi"],["net","pas"],["gutt","bien"]],"note":"« mer » est la forme courte de « mir » (à moi). « Et geet mer gutt » = « ça va bien pour moi »."},

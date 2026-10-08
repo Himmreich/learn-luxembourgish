@@ -84,10 +84,10 @@ async function answer(w, themeId, ok) {
 async function testLesson(w, label) {
   const d = w.document, LB = w.LB;
   assert.strictEqual(d.querySelectorAll(".theme").length, LB.content.themes.size, label + " : un bouton par thème");
-  assert.strictEqual(d.querySelectorAll(".theme").length, 24, label + " : 24 thèmes");
+  assert.strictEqual(d.querySelectorAll(".theme").length, 26, label + " : 26 thèmes");
   assert.strictEqual(d.querySelectorAll(".gram").length, 1, label + " : une page de grammaire");
   assert(d.querySelector(".stats").textContent.includes("0/" + LB.content.items.size), label + " : mots maîtrisés");
-  assert.strictEqual(d.querySelectorAll("h2").length, 5, label + " : 5 sections");
+  assert.strictEqual(d.querySelectorAll("h2").length, 6, label + " : 6 sections");
 
   d.querySelector('[data-theme="salut"]').click();
   await waitFor(() => d.querySelector(".prompt"), "première question");

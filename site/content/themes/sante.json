@@ -1,0 +1,30 @@
+{
+  "id": "sante",
+  "title": "Maladies, médecin et dentiste",
+  "items": [
+    {"id":"sante.den-dokter","fr":"Le médecin","lb":"Den Dokter","gender":"m"},
+    {"id":"sante.d-doktesch","fr":"La médecin (femme)","lb":"D'Doktesch","gender":"f"},
+    {"id":"sante.den-zanndokter","fr":"Le dentiste","lb":"Den Zänndokter","gender":"m"},
+    {"id":"sante.d-apdikt","fr":"La pharmacie","lb":"D'Apdikt","gender":"f"},
+    {"id":"sante.d-spidol","fr":"L'hôpital","lb":"D'Spidol","gender":"n"},
+    {"id":"sante.de-wartesall","fr":"La salle d'attente","lb":"De Wartesall","gender":"m"},
+    {"id":"sante.krank","fr":"Malade","lb":"Krank"},
+    {"id":"sante.d-krankheet","fr":"La maladie","lb":"D'Krankheet","gender":"f"},
+    {"id":"sante.d-peng","fr":"La douleur","lb":"D'Péng","gender":"f"},
+    {"id":"sante.de-kappwei","fr":"Le mal de tête","lb":"De Kappwéi","gender":"m"},
+    {"id":"sante.d-zannwei","fr":"Le mal de dents","lb":"D'Zännwéi","gender":"n"},
+    {"id":"sante.de-bauchwei","fr":"Le mal de ventre","lb":"De Bauchwéi","gender":"m"},
+    {"id":"sante.den-halswei","fr":"Le mal de gorge","lb":"Den Halswéi","gender":"m"},
+    {"id":"sante.d-feiwer","fr":"La fièvre","lb":"D'Féiwer"},
+    {"id":"sante.den-houscht","fr":"La toux","lb":"Den Houscht","gender":"m"},
+    {"id":"sante.de-schnapp","fr":"Le rhume","lb":"De Schnapp","gender":"m"},
+    {"id":"sante.d-medikament","fr":"Le médicament","lb":"D'Medikament","gender":"n"},
+    {"id":"sante.d-ordonnance","fr":"L'ordonnance","lb":"D'Ordonnance","gender":"f"},
+    {"id":"sante.ech-hu-kappwei","fr":"J'ai mal à la tête","lb":"Ech hu Kappwéi","parts":[["Ech","je"],["hu","ai"],["Kappwéi","mal de tête"]],"note":"« hu » est « hunn » (avoir) sans son n, car « Kappwéi » commence par k (règle du n). Devant une voyelle ou h : « Ech hunn Halswéi »."},
+    {"id":"sante.ech-hunn-halswei","fr":"J'ai mal à la gorge","lb":"Ech hunn Halswéi","parts":[["Ech","je"],["hunn","ai"],["Halswéi","mal de gorge"]],"note":"Pas d'article : « avoir mal à » se dit « hunn » + le nom de la douleur (« Kappwéi », « Halswéi »...)."},
+    {"id":"sante.ech-hu-feiwer","fr":"J'ai de la fièvre","lb":"Ech hu Féiwer","parts":[["Ech","je"],["hu","ai"],["Féiwer","fièvre"]]},
+    {"id":"sante.ech-hunn-de-schnapp","fr":"J'ai un rhume","lb":"Ech hunn de Schnapp","parts":[["Ech","je"],["hunn","ai"],["de Schnapp","le rhume"]],"note":"En luxembourgeois, on « a le rhume » : l'article défini « de » remplace le « un » du français."},
+    {"id":"sante.wann-den-houscht-net-ewechgeet","fr":"Si la toux ne passe pas, tu dois aller chez le médecin","lb":"Wann den Houscht net ewechgeet, muss de bei den Dokter goen","parts":[["Wann","si"],["den Houscht","la toux"],["net","ne… pas"],["ewechgeet","part, passe"],["muss de","tu dois"],["bei den Dokter","chez le médecin"],["goen","aller"]],"note":"« de » est ici la forme courte de « du » (tu). Après « Wann… », le verbe principal « muss » vient tout de suite, avant le sujet."},
+    {"id":"sante.setzt-iech-an-de-wartesall","fr":"Asseyez-vous encore un moment dans la salle d'attente","lb":"Setzt Iech nach ee Moment an de Wartesall","parts":[["Setzt Iech","asseyez-vous"],["nach","encore"],["ee Moment","un moment"],["an de Wartesall","dans la salle d'attente"]]}
+  ]
+}

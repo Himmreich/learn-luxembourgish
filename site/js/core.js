@@ -3,7 +3,7 @@ window.LB = window.LB || {};
 (function (LB) {
   "use strict";
 
-  LB.VERSION = "17";
+  LB.VERSION = "18";
 
   LB.$ = function (selector) { return document.querySelector(selector); };
 
